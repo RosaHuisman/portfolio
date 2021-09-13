@@ -2,32 +2,37 @@
     border: 1px #f4f4f4 solid;
         &__background {
             margin: 3rem auto;
-            width: 90%;
+            width: 85%;
             height: 300px;
             background-color: rgb(226, 197, 30);
             border-radius: 5px;
-        }
+                }
         &__image {
             width: 70%;
-            margin: 4rem 1rem 0;
+            margin: 1rem 1rem 0;
             border-radius: 5px;
             transform: rotate(0deg);
             transition: 2s;
-            
-        }
-        &__image__open {
-            width: 65%;
-            transform: rotate(360deg) translateX(170px) translateY(-140px) scale(0.6);
-            border-radius: 50%;
-            transition: 2s;
-        }
+            float: right;
 
-        &__text__open {
-            padding: 2rem;
-            text-align: justify;
+            &__open {
+                width: 40%;
+                border-radius: 50%;
+                transform: rotate(360deg) translateX(18px) translateY(-30px);
+                transition: 2s;
+                float: right;
+                margin: -.5rem;
+                shape-outside: circle(50%);
+            }
+                        
         }
         &__text {
             display: none;
+            &__open {
+                padding: 1rem;
+                text-align: justify;
+                
+            }
         }
     
     
