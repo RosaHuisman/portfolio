@@ -14,8 +14,7 @@
         &__title {
             font-size: 2.5em;
             writing-mode: vertical-rl;
-            padding: 1rem;
-            margin-left: 2.5rem;
+            padding: 0 1rem 0 2.5rem;
             color: white;
 
             &__open {
@@ -24,31 +23,28 @@
            }
 
         &__image {
-            width: 70%;
-            margin: 1rem;
+            width: 95%;
+            margin: 0 1rem;
             border-radius: 5px;
-            transform: rotate(0deg);
             transition: 2s;
-            //float: right;
-            max-width: 300px;
+            float: right;
+            //max-width: 300px;
 
             &__open {
-                width: 40%;
+                width: 30%;
                 border-radius: 50%;
-                transform: rotate(360deg) translateX(18px) translateY(-30px);
                 transition: 2s;
                 float: right;
-                margin: -.5rem;
+                margin: 1rem;
                 shape-outside: circle(50%);
-                max-width: 200px;
+                //max-width: 200px;
             }              
         }
 
         &__image:hover {
-            width: 65%;
             opacity: 0.5;
         }
-        &__image:hover + .text {
+        &__image:hover + .intro__aboutme {
             position: absolute;
             top: 80%;
             //left: 30%;
@@ -58,13 +54,21 @@
             text-align: right;
             color: white;
         }
+
+        &__imgoverlay{
+            position: relative;
+        }
+
+        &__aboutme {
+            visibility: hidden;
+        }
        
 
         &__textanimation {
             font-size: 1.6em;
             display: flex;
             color: white;
-            padding: 1rem;
+            padding: 0 1rem;
         }
 
         &__text {
@@ -74,18 +78,7 @@
                 text-align: justify;
                 
             }
-        }
-       
-    
-}
-
-.test{
-    position: relative;
-}
-
-
-.text {
-    visibility: hidden;
+        }   
 }
 
 
