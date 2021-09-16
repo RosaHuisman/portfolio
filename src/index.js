@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 import store from '../src/store';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
