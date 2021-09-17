@@ -22,6 +22,9 @@
             }
            }
 
+     
+        
+
         &__image {
             width: 95%;
             margin: 0 1rem;
@@ -62,14 +65,6 @@
         &__aboutme {
             visibility: hidden;
         }
-       
-
-        &__textanimation {
-            font-size: 1.6em;
-            display: flex;
-            color: white;
-            padding: 0 1rem;
-        }
 
         &__text {
             display: none;
@@ -83,3 +78,20 @@
 
 
 
+/* Animations des lettres */
+h1 span {opacity:0;}
+.letter01 {animation:letters 3s ease 0000ms forwards;}
+.letter02 {animation:letters 3s ease 0500ms forwards;}
+.letter03 {animation:letters 3s ease 1000ms forwards;}
+.letter04 {animation:letters 3s ease 1500ms forwards;}
+.letter05 {animation:letters 3s ease 2000ms forwards;}
+.letter07 {animation:letters 3s ease 3500ms forwards;}
+.letter08 {animation:letters 3s ease 4000ms forwards;}
+.letter09 {animation:letters 3s ease 4500ms forwards;}
+.letter10 {animation:letters 3s ease 5000ms forwards;}
+.letter11 {animation:letters 3s ease 5500ms forwards;}
+
+@keyframes letters {
+	0% {opacity:0;}
+	100% {opacity:1.0;}
+}
