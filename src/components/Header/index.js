@@ -35,11 +35,11 @@ React.useEffect(() => {
 
           <Dropdown icon='bars' className="header__firstsection__dropdown">
             <Dropdown.Menu className="header__firstsection__dropdownmenu">
-              <Dropdown.Item text='Accueil' className="header__firstsection__dropdownmenu"/>
-              <Dropdown.Item text='Expérience' />
-              <Dropdown.Item text='Formation' />
-              <Dropdown.Item text='Projets' />
-              <Dropdown.Item text='Contact' />
+              <Dropdown.Item text='Accueil' className="header__firstsection__dropdownelement"/>
+              <Dropdown.Item text='Expérience' className="header__firstsection__dropdownelement" />
+              <Dropdown.Item text='Formation' className="header__firstsection__dropdownelement" />
+              <Dropdown.Item text='Projets' className="header__firstsection__dropdownelement"/>
+              <Dropdown.Item text='Contact' className="header__firstsection__dropdownelement" />
             </Dropdown.Menu>
           </Dropdown>
 
