@@ -1,3 +1,5 @@
+
+
 .header {
     //background-color: red;
 
@@ -30,14 +32,16 @@
             align-items: center;
             
             &__iam {
-                font-size: .5em;
+                font-size: .9em;
                 margin-right: 5px;
                 color: #222222;
-                
+
             }
             &__designation {
-                font-size: .8em;
+                font-size: 1.2em;
                 color: #67805c;
+                font-family: 'Birthstone Bounce', cursive;
+
             }
         }
 }
