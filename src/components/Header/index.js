@@ -48,9 +48,7 @@ React.useEffect(() => {
               <a href="http://scripteden.com/download/eden-ui/" target="_blank" rel="noreferrer" className="btn-social btn-linkedin"><i className="fa fa-linkedin"></i></a>
 
           </div>
-
           
-
           </div>
 
           <div className="header__secondsection"> 
