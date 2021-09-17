@@ -8,22 +8,7 @@ const Header = () => {
 
   return (
         <div className="header">
-
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/">
-                <i className="fab fa-twitter icon"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/"><i className="fab fa-github icon"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/"><i className="fab fa-linkedin-in icon"></i></a></li>
-            <li>
-              <a href="https://www.facebook.com/"><i className="fab fa-google-plus-g icon"></i></a></li>
-          </ul>
-           
-          <h1 className="header__name"> Rosa Huisman </h1>
+          <div className="header__firstsection"> 
           <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -42,6 +27,21 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
             </Navbar>
+
+            <h1 className="header__name"> Rosa Huisman </h1>
+
+          </div>
+
+          <div className="header__secondsection"> 
+            <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+            <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
+            <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-email"><i class="fa fa-envelope"></i></a>
+            <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+          
+           
+          
 
         </div>
        
