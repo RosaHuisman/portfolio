@@ -9,26 +9,36 @@
             margin: .5rem 1rem;
             font-size: 2.2em;
             color: #bdb026;
+        }
 
+        &__dropdownmenu {
+            width: 100%;
+            background-color: red;
         }
 
         &__social {
             margin-top: .5rem;
         }
-
-    
-
     }
 
     &__secondsection {
-        margin: 2rem 0;
+        margin: 2rem 1rem;
 
         &__textanimation {
-            font-size: 1.4em;
             display: flex;
-            justify-content: center;
-            color: #67805c;
-            padding: 0 1rem;
+            justify-content: flex-start;
+            align-items: center;
+            
+            &__iam {
+                font-size: .5em;
+                margin-right: 5px;
+                color: #222222;
+                
+            }
+            &__designation {
+                font-size: .8em;
+                color: #67805c;
+            }
         }
 }
 }
@@ -103,48 +113,32 @@ a.btn-social,
 
 
 
-.btn-facebook
-    {
-        background-color: #3b5998;
-    }
-.btn-facebook:hover
-    {
-        background-color: #4c70ba;
-    }
+
 
 .btn-github
     {
-        background-color: #4183c4;
+        background-color: #6f6f6f;
     }
 .btn-github:hover
     {
-        background-color: #689cd0;
+        background-color: #6f6f6f79;
     }
 .btn-linkedin
     {
-        background-color: #0976b4;
+        background-color: #577758;
     }
 .btn-linkedin:hover
     {
-        background-color: #0b96e5;
-    }
-
-.btn-twitter
-    {
-        background-color: #55acee;
-    }
-.btn-twitter:hover
-    {
-        background-color: #83c3f3;
+        background-color: #5777586b;
     }
 
 .btn-email
     {
-        background-color: #44c456;
+        background-color: #e0c23a;
     }
 .btn-email:hover
     {
-        background-color: #6bd079;
+        background-color: #e0c13a7b;
     }
 
 
