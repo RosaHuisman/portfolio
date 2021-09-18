@@ -3,6 +3,7 @@ import './style.scss';
 
 import me from '../../images/me.jpg'
 
+
 const Intro = ({
   clickImage,
   isOpen,
@@ -47,6 +48,7 @@ const onClickImage = () => {
             </p>
             
           </div >
+
         </div>
        
   );

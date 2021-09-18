@@ -8,9 +8,55 @@
       justify-content: space-between;
 
         &__dropdown {
+            background-color: #ffffff00;
             margin: .5rem 1rem;
-            font-size: 2.2em;
             color: #bdb026;
+            height: 4rem;
+            width: 4rem;
+            border: none;
+
+            &__element {
+                border-top: 5px solid #bdb026;
+                border-bottom: 5px solid #bdb026;
+                height: 1.1rem;
+                width: 2rem;
+            }
+            &__secondelement {
+                border-bottom: 5px solid #bdb026;
+                height: .8rem;
+                width: 2rem;
+            }
+        }
+
+        &__dropmenu {
+            visibility: visible;
+            background-color: #fff;
+            position: absolute;
+            z-index: 100;
+            margin-left: 1.2rem;
+            width: 70%;
+            padding: .7rem 0;
+            border-radius: 10px;
+
+            &__close {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            &__element {
+                display: block;
+                text-decoration: none;
+                color: #bdb026;
+                padding: .4rem 1.5rem;
+                font-size: 1.2em;
+            }
+            &__element:hover {
+                color: white;
+                background-color: #bdb026;
+                margin: 0 1rem;
+                border-radius: 20px;
+                text-align: right;
+            }
         }
 
         &__dropdownelement {
@@ -165,5 +211,7 @@ a.btn-social,
     }
 
 
+ 
+     
+
     
-      
