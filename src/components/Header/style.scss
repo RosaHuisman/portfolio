@@ -93,20 +93,20 @@
                 margin-right: 5px;
                 color: #222222;
                 //pour le dev
-                font-size: .9em;
+                //font-size: .9em;
 
                  //pour la prod
-                 //font-size: 1.4em;
+                 font-size: 1.4em;
 
             }
             &__designation {
                 
                 color: #222222;
                 //pour le dev
-                font-size: 1.3em;
+                //font-size: 1.3em;
 
                 //pour la prod
-                //font-size: 1.9em;
+                font-size: 1.9em;
             }
         }
 }
