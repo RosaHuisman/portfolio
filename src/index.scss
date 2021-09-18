@@ -1,7 +1,12 @@
 @use 'reset';
 
 @import 'semantic-ui-css/semantic.min.css';
+
+//police titres
 @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap');
+
+// police générale
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
   margin: 0;

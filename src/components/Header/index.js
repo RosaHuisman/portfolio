@@ -7,11 +7,8 @@ import TextTransition, { presets } from "react-text-transition";
 
 
 const TEXTS = [
-  " Rosa Huisman",
   " développeuse Junior",
-  " Rosa Huisman",
   " développeuse FullStack",
-  " Rosa Huisman",
   " développeuse Front-End"
 ];
 
@@ -30,6 +27,8 @@ React.useEffect(() => {
 
   return (
         <div className="header">
+
+
           <div className="header__firstsection"> 
       
 
@@ -53,16 +52,16 @@ React.useEffect(() => {
           </div>
 
           <div className="header__secondsection"> 
-
+            <h1 className="header__secondsection__name"> Rosa Huisman </h1>
             
-            <h1 className="header__secondsection__textanimation" > 
+            <div className="header__secondsection__textanimation" > 
               <div className="header__secondsection__textanimation__iam"> Je suis&nbsp; </div>
               <TextTransition
               text={ TEXTS[index % TEXTS.length] }
               springConfig={ presets.wobbly }
               className="header__secondsection__textanimation__designation"
               />
-            </h1>
+            </div>
 
 
             

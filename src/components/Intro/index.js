@@ -20,7 +20,7 @@ const onClickImage = () => {
             
             <div className={ isOpen ? "intro__imghello__open" : "intro__imghello" }>
               
-              <h1 className={ isOpen ? "intro__title__open" : "intro__title" } > 
+              <div className={ isOpen ? "intro__title__open" : "intro__title" } > 
               <span className="letter01">H</span>
               <span className="letter02">e</span>
               <span className="letter03">l</span>
@@ -33,7 +33,7 @@ const onClickImage = () => {
               <span className="letter10">l</span>
               <span className="letter11">d</span>
 
-              </h1>
+              </div>
               
               <div className="intro__imgoverlay"> 
                 <img src={me} className={ isOpen ? "intro__image__open" : "intro__image" } alt="Rosa Huisman" onClick={onClickImage} />   
