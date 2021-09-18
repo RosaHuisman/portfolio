@@ -26,10 +26,6 @@ React.useEffect(() => {
 
   const { buttonProps, itemProps, isOpen } = useDropdownMenu(5);
 
-  const handleClick = () => {
-    console.log('coucou')
-  }
-
   return (
         <div className="header">
 
