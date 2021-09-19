@@ -1,7 +1,8 @@
 import React from 'react'
 import './style.scss';
 
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
 
 import Intro from '../../containers/Intro'
 import Header from '../../components/Header'
@@ -13,17 +14,18 @@ function App() {
 
   return (
     <div className="app">
-      <BrowserRouter>
         	<Switch>
-        		<Route path="/">
+        		<Route path="/" exact>
               <Header />
               <Intro />
         		</Route>
-        		<Route path="/experience">
-        			<Experience />
-        		</Route>
+        		<Route path="/experience" exact >
+              <Header />
+              <Experience />
+            </Route>
+        			
+        		
         	</Switch>
-        </BrowserRouter>
     </div>
   );
 }
