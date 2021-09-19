@@ -27,7 +27,7 @@ React.useEffect(() => {
   const { buttonProps, itemProps, isOpen } = useDropdownMenu(5);
 
   return (
-        <div className="header">
+        <div className="header" id="accueil">
 
           <div className="header__firstsection"> 
 
@@ -37,8 +37,8 @@ React.useEffect(() => {
                 <div className="header__firstsection__dropdown__secondelement"></div>
               </button>
               <div className={isOpen ? 'header__firstsection__dropmenu' : 'header__firstsection__dropmenu__close'} >
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[0]} href='www.google.fr'>Accueil</a>
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[1]} href='www.google.fr'>Expérience</a>
+                  <a className="header__firstsection__dropmenu__element" {...itemProps[0]} href='/' >Accueil</a>
+                  <a className="header__firstsection__dropmenu__element" {...itemProps[1]} href='/experience'>Expérience</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[2]} href='www.google.fr'>Formation</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[3]} href='www.google.fr'>Projets</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[4]} href='www.google.fr'>Contact</a>

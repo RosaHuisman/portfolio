@@ -6,6 +6,12 @@
     &__firstsection {
       display: flex;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background-color: #f0f0f0;
 
         &__dropdown {
             background-color: #ffffff00;
@@ -49,13 +55,16 @@
                 color: #bdb026;
                 padding: .4rem 1.5rem;
                 font-size: 1.2em;
+                border: none;
             }
+            // bien pour desktop, pas visible pour mobile: 
             &__element:hover {
                 color: white;
                 background-color: #bdb026;
                 margin: 0 1rem;
                 border-radius: 20px;
                 text-align: right;
+                border: none;
             }
         }
 
@@ -74,7 +83,8 @@
     }
 
     &__secondsection {
-        margin: 2rem 1rem;
+
+        padding: 7rem 1rem 2rem 1rem;
         
 
         &__name {

@@ -15,7 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
+    height: 100vh;
+    background-image: url('/images/pexels-pineapple-supply-co-174672.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 code {
