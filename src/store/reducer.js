@@ -1,9 +1,11 @@
 import {
-  CLICK_IMAGE
+  CLICK_IMAGE,
+  CLICK_CV,
 } from './actions'
 
 export const initialState = {
-  isOpen: false, 
+  isOpen: false,
+  cvOpen: false, 
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -12,6 +14,12 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         isOpen: !state.isOpen,
+      }
+    };
+    case CLICK_CV: {
+      return {
+        ...state,
+        cvOpen: !state.cvOpen,
       }
     }
     default:

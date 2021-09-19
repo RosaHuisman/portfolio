@@ -69,7 +69,16 @@
                 text-align: justify;
                 
             }
-        }   
+        }
+        
+        &__cv {
+            &__button {
+                &__cvopen {
+                    width: 80%;
+                    
+                }
+            }
+                }
 }
 
 

@@ -2,16 +2,23 @@ import React from 'react'
 import './style.scss';
 
 import me from '../../images/me.jpg'
+import cv from '../../images/me.jpg'
 
 
 const Intro = ({
   clickImage,
   isOpen,
+  clickCV,
+  cvOpen
 }) => {
 
 
 const onClickImage = () => {
     clickImage();
+};
+
+const handleClickCV = () => {
+  clickCV();
 };
 
   return (
@@ -48,6 +55,11 @@ const onClickImage = () => {
             </p>
             
           </div >
+
+          <div className="intro__cv">
+            <button className={cvOpen ? "intro__cv__button__open" : "intro__cv__button" } onClick={handleClickCV}> Mon CV </button>
+            <img src={cv} className={cvOpen ? "intro__cv__button__cvopen" : "intro__cv__close" } /> 
+          </div>
 
         </div>
        
