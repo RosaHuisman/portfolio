@@ -42,6 +42,7 @@
 
         &__image:hover {
             opacity: 0.5;
+
         }
         &__image:hover + .intro__aboutme {
             position: absolute;
@@ -52,6 +53,7 @@
             font-weight: bold;
             text-align: right;
             color: white;
+
         }
 
         &__imgoverlay{
@@ -73,9 +75,62 @@
         
         &__cv {
             &__button {
-                &__cvopen {
-                    width: 80%;
-                    
+                padding: 1rem 2rem;
+                display: block;
+                margin: 0 auto;
+                background-color: #bdb026;
+                border: none;
+
+                &__open{
+                    display: none;
+                }
+
+                
+            }
+            &__cvopen {
+                width: 80%;
+                position: absolute;
+                top: 7rem;
+                left: 3rem;
+                
+            }
+            &__close {
+                display: none;
+            }
+
+            &__closebutton {
+                display: none;
+
+                &__open {
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #bdb026;
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding: .5rem;
+                    border: none;
+                    position: absolute;
+                    top: 7rem;
+                    left: 90%;
+                }
+            
+            }
+            &__dlbutton {
+                display: none;
+
+                &__open {
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #bdb026;
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding: .5rem;
+                    border: none;
+                    position: absolute;
+                    top: 11rem;
+                    left: 90%;
                 }
             }
                 }
