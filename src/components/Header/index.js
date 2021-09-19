@@ -39,9 +39,9 @@ React.useEffect(() => {
               <div className={isOpen ? 'header__firstsection__dropmenu' : 'header__firstsection__dropmenu__close'} >
                   <a className="header__firstsection__dropmenu__element" {...itemProps[0]} href='/' >Accueil</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[1]} href='/experience'>Expérience</a>
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[2]} href='www.google.fr'>Formation</a>
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[3]} href='www.google.fr'>Projets</a>
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[4]} href='www.google.fr'>Contact</a>
+                  <a className="header__firstsection__dropmenu__element" {...itemProps[2]} href='/formation'>Formation</a>
+                  <a className="header__firstsection__dropmenu__element" {...itemProps[3]} href='/projets'>Projets</a>
+                  <a className="header__firstsection__dropmenu__element" {...itemProps[4]} href='/contact'>Contact</a>
               </div>
 
           </div>

@@ -3,11 +3,12 @@ import './style.scss';
 
 import { Route, Switch } from 'react-router-dom';
 
-
 import Intro from '../../containers/Intro'
 import Header from '../../components/Header'
 import Experience from '../../components/Experience'
-
+import Formation from '../../components/Formation'
+import Projets from '../../components/Projets'
+import Contact from '../../components/Contact'
 
 
 function App() {
@@ -23,7 +24,18 @@ function App() {
               <Header />
               <Experience />
             </Route>
-        			
+            <Route path="/formation" exact >
+              <Header />
+              <Formation />
+            </Route>
+            <Route path="/projets" exact >
+              <Header />
+              <Projets />
+            </Route>
+            <Route path="/contact" exact >
+              <Header />
+              <Contact />
+            </Route>
         		
         	</Switch>
     </div>
