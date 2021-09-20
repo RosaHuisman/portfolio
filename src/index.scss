@@ -17,8 +17,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
     height: 100vh;
-    background-image: url('/images/pexels-pineapple-supply-co-174672.jpg');
-    background-size: cover;
+    background-image: url('/images/background.png');
+    background-size: 100%;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 

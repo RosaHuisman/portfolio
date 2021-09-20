@@ -51,7 +51,7 @@ const handleClickCV = () => {
             </div>
 
             <p className={ isOpen ? "intro__text__open" : "intro__text" }>
-            Ut sit amet euismod diam. Nunc est enim, imperdiet ut justo sed, fermentum lacinia urna. Phasellus tristique scelerisque dapibus. Mauris elit lectus, laoreet quis ante sed, tempor tincidunt sapien. In auctor finibus aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per incepsdqftos himenaeos. Class aptent taciti. Class aptent taciti, Class aptent taciti , Cqdsdsclass aptentsdqf taciti,
+            Ut sit amet euismod diam. Nunc est enim, imperdiet ut justo sed, fermentum lacinia urna. Phasellus risque dapibus. Mauris elit lectus, laoreet quis ante sed, tempor tincidunt sapien. In auctor finibus aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per incepsdqftos himenaeos. Class aptent taciti. Class aptent orquent per conubia nostra, per incepsdqftos himenaeos. Class aptent taciti. Class aptent taciti, Class aptent taciti, Cqdsdsclass aptentsdqf taciti.
             </p>
             
           </div >

@@ -44,16 +44,16 @@
             opacity: 0.5;
 
         }
+
         &__image:hover + .intro__aboutme {
             position: absolute;
             top: 80%;
-            //left: 30%;
+            left: 20%;
             visibility: visible;
-            font-size: 30px;
+            font-size: 1.4em;
             font-weight: bold;
             text-align: right;
             color: white;
-
         }
 
         &__imgoverlay{
@@ -75,9 +75,11 @@
         
         &__cv {
             &__button {
+                position: fixed;
+                bottom: 5%;
+                left: 32%;
                 padding: 1rem 2rem;
                 display: block;
-                margin: 0 auto;
                 background-color: #bdb026;
                 border: none;
 
@@ -88,10 +90,10 @@
                 
             }
             &__cvopen {
-                width: 80%;
+                width: 90%;
+                left: 5%;
                 position: absolute;
-                top: 7rem;
-                left: 3rem;
+                top: 30%;
                 max-width: 500px;
                 
             }
@@ -107,16 +109,16 @@
                     margin: 0 auto;
                     background-color: #bdb026;
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     font-weight: bold;
                     padding: .5rem;
                     border: none;
                     position: absolute;
-                    top: 7rem;
-                    left: 90%;
+                    bottom: 6%;
+                    right: 20px;
                 }
-            
             }
+
             &__dlbutton {
                 display: none;
 
@@ -125,19 +127,17 @@
                     margin: 0 auto;
                     background-color: #bdb026;
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     font-weight: bold;
                     padding: .5rem;
                     border: none;
                     position: absolute;
-                    top: 11rem;
-                    left: 90%;
+                    bottom: 6%;
+                    right: 75px;
                 }
             }
                 }
 }
-
-
 
 /* Animations des lettres */
 div span {opacity:0;}
