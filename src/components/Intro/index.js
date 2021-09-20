@@ -58,7 +58,7 @@ const handleClickCV = () => {
 
           <div className="intro__cv">
             <button className={cvOpen ? "intro__cv__button__open" : "intro__cv__button" } onClick={handleClickCV}> Mon CV </button>
-            <img src={cv} className={cvOpen ? "intro__cv__cvopen" : "intro__cv__close" } />
+            <img src={cv} alt="CV de Rosa Huisman" className={cvOpen ? "intro__cv__cvopen" : "intro__cv__close" } />
             <button className={cvOpen ? "intro__cv__closebutton__open" : "intro__cv__closebutton" } onClick={handleClickCV}> <i class="close icon"></i></button> 
             <form method="get" action={cv}>
             <button className={cvOpen ? "intro__cv__dlbutton__open" : "intro__cv__dlbutton" } type="submit"><i class="download icon"></i></button>
