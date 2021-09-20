@@ -14,13 +14,13 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         isOpen: !state.isOpen,
-      }
-    };
+      };
+    }
     case CLICK_CV: {
       return {
         ...state,
         cvOpen: !state.cvOpen,
-      }
+      };
     }
     default:
       return state;
