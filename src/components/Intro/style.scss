@@ -22,12 +22,12 @@
             }
            }
 
+
         &__image {
             width: 80%;
-            margin: 0 1rem;
+            margin: 0 15%;
             border-radius: 5px;
             transition: 2s;
-            float: right;
             max-width: 300px;
 
             &__open {
@@ -37,6 +37,7 @@
                 float: right;
                 margin: 0 0 0 .4rem;
                 shape-outside: circle(50%);
+                transform: translateY(-25px);
                 
             }              
         }
@@ -46,31 +47,26 @@
 
         }
 
-        &__image:hover + .intro__aboutme {
-            position: absolute;
-            top: 80%;
-            left: 20%;
-            visibility: visible;
-            font-size: 1.4em;
+        &__about {
+            font-size: 1.2em;
             font-weight: bold;
-            text-align: right;
-            color: white;
-            
+            text-align: center;
+            color: #494949;
+            transform: translateY(-140%);
+
+            &__open {
+                display: none;
+            }
         }
 
-        &__imgoverlay{
-            position: relative;
-        }
+        
 
-        &__aboutme {
-            visibility: hidden;
-        }
 
         &__text {
             display: none;
             &__open {
                 font-size: .9em;
-                margin: 0 1rem;
+                margin: 1rem;
                 padding: 1rem;
                 text-align: justify;
                 background-color: rgba(255, 255, 255, 0.372);
@@ -82,11 +78,11 @@
         }
 
         &__meta {
-            position: fixed;
-            bottom: 20%;
-            left: 5%;
-            font-size: .8em;
+            text-align: right;
+            font-size: 1em;
             font-weight: bold;
+            line-height: 3px;
+            margin-right: 1rem; 
 
             &__open {
                 display: none;
@@ -95,9 +91,6 @@
         
         &__cv {
             &__button {
-                position: fixed;
-                bottom: 5%;
-                left: 3%;
                 padding: .8rem 1.3rem;
                 display: block;
                 background-color: #bdb026;
@@ -105,6 +98,7 @@
                 color: white;
                 font-weight: bold;
                 border-radius: 5px;
+                margin: 1rem;
 
                 &__open{
                     display: none;
@@ -116,7 +110,7 @@
                 width: 95%;
                 left: 2%;
                 position: absolute;
-                top: 8%;
+                top: 7%;
                 max-width: 500px;
                 
             }

@@ -43,9 +43,9 @@ const handleClickCV = () => {
 
               </div>
               
-              <div className="intro__imgoverlay"> 
+              <div className="intro__clickimage"> 
                 <img src={me} className={ isOpen ? "intro__image__open" : "intro__image" } alt="Rosa Huisman" onClick={onClickImage} />   
-                <p className="intro__aboutme">About me ...</p>
+                <p onClick={onClickImage} className={ isOpen ? "intro__about__open" : "intro__about" }>About me ...</p>
               </div>
 
             </div>
@@ -57,8 +57,10 @@ const handleClickCV = () => {
             
           </div >
 
-          <div className={ isOpen ? "intro__meta__open" : "intro__meta" }>
-            33 ans - En recherche d'emploi - Sud de la France
+          <div className={ isOpen || cvOpen ? "intro__meta__open" : "intro__meta" }>
+            <p> 33 ans </p>
+             <p> En recherche d'emploi </p>
+             <p> Sud de la France </p>
           </div>
 
           <div className="intro__cv">
