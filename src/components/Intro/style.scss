@@ -35,7 +35,7 @@
                 border-radius: 50%;
                 transition: 2s;
                 float: right;
-                margin: 0 0 0 .4rem;
+                margin: 0 0 0 .6rem;
                 shape-outside: circle(50%);
                 transform: translateY(-25px);
                 
@@ -81,7 +81,6 @@
             text-align: right;
             font-size: 1em;
             font-weight: bold;
-            line-height: 3px;
             margin-right: 1rem; 
 
             &__open {
