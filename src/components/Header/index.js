@@ -49,9 +49,9 @@ React.useEffect(() => {
          
 
           <div className="header__firstsection__social">
-              <a href="http://scripteden.com/download/eden-ui/" target="_blank" rel="noreferrer" className="btn-social btn-github"><i className="fa fa-github-alt"></i></a>
-              <a href="http://scripteden.com/download/eden-ui/" target="_blank" rel="noreferrer" className="btn-social btn-email"><i className="fa fa-envelope"></i></a>
-              <a href="http://scripteden.com/download/eden-ui/" target="_blank" rel="noreferrer" className="btn-social btn-linkedin"><i className="fa fa-linkedin"></i></a>
+              <a href="https://github.com/RosaHuisman" target="_blank" rel="noreferrer" className="btn-social btn-github"><i className="fa fa-github-alt"></i></a>
+              <a href="mailto:rosa.huisman@gmail.com" rel="noreferrer" className="btn-social btn-email"><i className="fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/rosa-huisman-480237216/" target="_blank" rel="noreferrer" className="btn-social btn-linkedin"><i className="fa fa-linkedin"></i></a>
 
           </div>
 

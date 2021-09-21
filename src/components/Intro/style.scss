@@ -78,11 +78,14 @@
             &__button {
                 position: fixed;
                 bottom: 5%;
-                left: 32%;
-                padding: 1rem 2rem;
+                left: 3%;
+                padding: .8rem 1.3rem;
                 display: block;
                 background-color: #bdb026;
                 border: none;
+                color: white;
+                font-weight: bold;
+                border-radius: 5px;
 
                 &__open{
                     display: none;
@@ -94,7 +97,7 @@
                 width: 95%;
                 left: 2%;
                 position: absolute;
-                top: 20%;
+                top: 8%;
                 max-width: 500px;
                 
             }
