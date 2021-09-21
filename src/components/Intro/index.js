@@ -57,6 +57,10 @@ const handleClickCV = () => {
             
           </div >
 
+          <div className={ isOpen ? "intro__meta__open" : "intro__meta" }>
+            33 ans - En recherche d'emploi - Sud de la France
+          </div>
+
           <div className="intro__cv">
             <button className={cvOpen ? "intro__cv__button__open" : "intro__cv__button" } onClick={handleClickCV}> Mon CV </button>
             <img src={cv} alt="CV de Rosa Huisman" className={cvOpen ? "intro__cv__cvopen" : "intro__cv__close" } />

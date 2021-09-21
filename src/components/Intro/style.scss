@@ -80,6 +80,18 @@
                 
             }
         }
+
+        &__meta {
+            position: fixed;
+            bottom: 20%;
+            left: 5%;
+            font-size: .8em;
+            font-weight: bold;
+
+            &__open {
+                display: none;
+            }
+        }
         
         &__cv {
             &__button {
