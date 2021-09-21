@@ -1,7 +1,6 @@
 
 
 .header {
-    //background-color: red;
 
     &__firstsection {
       display: flex;
@@ -15,31 +14,31 @@
 
         &__dropdown {
             background-color: #ffffff00;
-            margin: .5rem 1rem;
+            margin: 0 1rem;
             color: #bdb026;
-            height: 4rem;
-            width: 4rem;
+            height: 3rem;
+            //width: 3rem;
             border: none;
 
             &__element {
-                border-top: 5px solid #bdb026;
-                border-bottom: 5px solid #bdb026;
-                height: 1.1rem;
-                width: 2rem;
+                border-top: 4px solid #bdb026;
+                border-bottom: 4px solid #bdb026;
+                height: .9rem;
+                width: 1.8rem;
             }
             &__secondelement {
-                border-bottom: 5px solid #bdb026;
-                height: .8rem;
-                width: 2rem;
+                border-bottom: 4px solid #bdb026;
+                height: .6rem;
+                width: 1.8rem;
             }
         }
 
         &__dropmenu {
             visibility: visible;
-            background-color: #fff;
+            background-color: #fefefe;
             position: absolute;
             z-index: 100;
-            margin-left: 1.2rem;
+            margin-left: 1rem;
             width: 70%;
             padding: .7rem 0;
             border-radius: 10px;
@@ -84,7 +83,7 @@
 
     &__secondsection {
 
-        padding: 7rem 1rem 2rem 1rem;
+        padding: 3.5em 1rem 1.5rem 1rem;
         
 
         &__name {
@@ -123,10 +122,10 @@ a.btn-social,
       border-radius: 50%;
       color: #ffffff !important;
       display: inline-block;
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      margin: 10px 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin: auto 5px;
       text-align: center;
       text-decoration: none;
       transition: background-color .3s;
