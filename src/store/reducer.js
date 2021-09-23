@@ -1,3 +1,5 @@
+import experiencesData from '../data/experiences'
+
 import {
   CLICK_IMAGE,
   CLICK_CV,
@@ -5,7 +7,8 @@ import {
 
 export const initialState = {
   isOpen: false,
-  cvOpen: false, 
+  cvOpen: false,
+  experiences: experiencesData, 
 };
 
 const reducer = (state = initialState, action = {}) => {
