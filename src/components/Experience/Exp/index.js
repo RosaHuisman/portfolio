@@ -27,7 +27,7 @@ const maxlimit = 230;
         
           { ((experience.description).length > maxlimit) && (element !== experience.title) ? (
               <p className="exp__description" onClick={handleDescription} title={experience.title}>
-                {(((experience.description).substring(0,maxlimit-3)) + " . . . " + " Lire la suite")}
+                {(((experience.description).substring(0,maxlimit-3)) + " . . . Lire la suite")}
               </p>
           ):((experience.description).length <= maxlimit) ? (
             <p className="exp__description">{experience.description}</p>
