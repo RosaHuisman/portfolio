@@ -4,6 +4,9 @@ import './style.scss';
 import me from '../../images/me.jpg'
 import cv from '../../images/CV_image.jpg'
 
+import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
+import { GiNewBorn } from 'react-icons/gi'
+import { ImSearch } from 'react-icons/im'
 
 const Intro = ({
   clickImage,
@@ -45,7 +48,7 @@ const handleClickCV = () => {
               
               <div className="intro__clickimage"> 
                 <img src={me} className={ isOpen ? "intro__image__open" : "intro__image" } alt="Rosa Huisman" onClick={onClickImage} />   
-                <p onClick={onClickImage} className={ isOpen ? "intro__about__open" : "intro__about" }>About me ...</p>
+                <p onClick={onClickImage} className={ isOpen ? "intro__about__open" : "intro__about" }>Cliquez ici <TiArrowForward/>  </p>
               </div>
 
             </div>
@@ -58,9 +61,9 @@ const handleClickCV = () => {
           </div >
 
           <div className={ isOpen || cvOpen ? "intro__meta__open" : "intro__meta" }>
-            <p> 33 ans </p>
-             <p> En recherche d'emploi </p>
-             <p> Sud de la France </p>
+            <p> <GiNewBorn/> 33 ans </p>
+             <p> <ImSearch /> En recherche d'emploi </p>
+             <p> <TiWeatherSunny /> Sud de la France </p>
           </div>
 
           <div className="intro__cv">
@@ -72,7 +75,6 @@ const handleClickCV = () => {
           </form>
           </div>
           
-
         </div>
        
   );
