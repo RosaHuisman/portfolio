@@ -3,12 +3,14 @@ import experiencesData from '../data/experiences'
 import {
   CLICK_IMAGE,
   CLICK_CV,
+  CLICK_OPEN_DESCRIPTION
 } from './actions'
 
 export const initialState = {
   isOpen: false,
   cvOpen: false,
-  experiences: experiencesData, 
+  experiences: experiencesData,
+  descriptionOpen: false, 
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -24,6 +26,15 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         cvOpen: !state.cvOpen,
       };
+    }
+    case CLICK_OPEN_DESCRIPTION: {
+      console.log(action.element)
+      return {
+        ...state,
+        //experiences: state.experiences.find((exp) => exp.title === action.element),
+        //descriptionOpen: !state.descriptionOpen,
+        descriptionOpen: state.experiences.find((exp) => exp.title === action.element),
+      }
     }
     default:
       return state;

@@ -1,0 +1,36 @@
+.exp {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffffffd5;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+       -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+       -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; 
+
+       &__title {
+           //text-align: center;
+           font-size: 1.6em;
+       }
+
+       &__date {
+           text-align: right;
+       }
+
+       &__place {
+           text-align: right;
+       }
+
+       &__subtitle {
+           text-align: center;
+           font-size: 2.3em;
+       }
+
+       &__description {
+           background-color: #bdb026b0;
+           border-radius: 5px;
+           padding: 1rem;
+           text-align: justify;           
+       }
+}
+
+//<p className="exp__description">{experience.description}</p>

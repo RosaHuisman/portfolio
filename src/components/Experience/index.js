@@ -1,18 +1,22 @@
 import React from 'react'
 import './style.scss';
 
-import Exp from'./Exp'
+import Exp from'./Exp/'
 
 const Experience = ({
-  experiences
+  experiences,
+  openDescription, 
+  descriptionOpen
 }) => {
-  console.log(experiences)
     return (
       <div className="experience">
         {experiences.map((exp) => (
           <Exp
             key={exp.title} 
             experience={exp}
+            openDescription={openDescription}
+            descriptionOpen={descriptionOpen}
+
           />
         ))}
       </div>
