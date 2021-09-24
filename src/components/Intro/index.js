@@ -5,7 +5,7 @@ import me from '../../images/me.jpg'
 import cv from '../../images/CV_image.jpg'
 
 import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
-import { GiNewBorn } from 'react-icons/gi'
+import { GiCandleLight } from 'react-icons/gi'
 import { ImSearch } from 'react-icons/im'
 
 const Intro = ({
@@ -60,8 +60,10 @@ const handleClickCV = () => {
             
           </div >
 
+            <button className={ isOpen ? "intro__text__back__open" : "intro__text__back" } onClick={onClickImage} >Retour</button>
+
           <div className={ isOpen || cvOpen ? "intro__meta__open" : "intro__meta" }>
-            <p> <GiNewBorn/> 33 ans </p>
+            <p> <GiCandleLight/> 33 ans </p>
              <p> <ImSearch /> En recherche d'emploi </p>
              <p> <TiWeatherSunny /> Sud de la France </p>
           </div>

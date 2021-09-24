@@ -50,7 +50,8 @@
         &__about {
             font-size: 1.2em;
             font-weight: bold;
-            text-align: center;
+            text-align: right;
+            margin-right: 1.5rem;
             color: #494949;
             transform: translateY(-140%);
             animation: flicker-1 5s linear infinite both;
@@ -59,45 +60,6 @@
                 display: none;
             }
         }
-     
-      
-@keyframes flicker-1 {
-    0%,
-    100% {
-      opacity: 1;
-      color: #bdb026;
-    }
-    41.99% {
-      opacity: 1;
-      color: #494949;
-    }
-    42% {
-      opacity: 0;
-    }
-    43% {
-      opacity: 0;
-    }
-    43.01% {
-      opacity: 1;
-    }
-    47.99% {
-      opacity: 1;
-    }
-    48% {
-      opacity: 0;
-    }
-    49% {
-      opacity: 0;
-    }
-    49.01% {
-      opacity: 1;
-    }
-  }
-  
-          
-
-        
-
 
         &__text {
             display: none;
@@ -106,19 +68,42 @@
                 margin: 1rem;
                 padding: 1rem;
                 text-align: justify;
-                background-color: rgba(255, 255, 255, 0.372);
+                background-color: #ffffff5f;
                 box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
                 -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
                 -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
                 
             }
+            &__back {
+                display: none;
+
+                &__open {
+                    float: right;
+                    padding: .8rem 1.3rem;
+                    display: block;
+                    background-color: #bdb026;
+                    border: none;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    margin: 4rem 1rem 0 1rem;
+                }
+            }
         }
 
         &__meta {
             text-align: right;
-            font-size: 1em;
+            font-size: .8em;
             font-weight: bold;
-            margin-right: 1rem; 
+            margin: 0 1rem; 
+            padding: 1rem;
+            width: 55%;
+            float: right;
+            background-color: #ffffffa4;
+                box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+            border-radius: 5px;
 
             &__open {
                 display: none;
@@ -134,7 +119,7 @@
                 color: white;
                 font-weight: bold;
                 border-radius: 5px;
-                margin: 1rem;
+                margin: 4rem 1rem 0 1rem;
 
                 &__open{
                     display: none;
@@ -209,3 +194,36 @@ div span {opacity:0;}
 	0% {opacity:0;}
 	100% {opacity:1.0;}
 }
+
+@keyframes flicker-1 {
+    0%,
+    100% {
+      opacity: 1;
+      color: #bdb026;
+    }
+    41.99% {
+      opacity: 1;
+      color: #494949;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
