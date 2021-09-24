@@ -10,7 +10,8 @@ export const initialState = {
   isOpen: false,
   cvOpen: false,
   experiences: experiencesData,
-  descriptionOpen: false, 
+  descriptionOpen: false,
+  element: '', 
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -28,12 +29,10 @@ const reducer = (state = initialState, action = {}) => {
       };
     }
     case CLICK_OPEN_DESCRIPTION: {
-      console.log(action.element)
       return {
         ...state,
-        //experiences: state.experiences.find((exp) => exp.title === action.element),
-        //descriptionOpen: !state.descriptionOpen,
-        descriptionOpen: state.experiences.find((exp) => exp.title === action.element),
+        descriptionOpen: !state.descriptionOpen,
+        element:action.element,
       }
     }
     default:

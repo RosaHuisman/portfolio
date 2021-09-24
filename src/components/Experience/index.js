@@ -6,7 +6,8 @@ import Exp from'./Exp/'
 const Experience = ({
   experiences,
   openDescription, 
-  descriptionOpen
+  descriptionOpen,
+  element
 }) => {
     return (
       <div className="experience">
@@ -16,6 +17,7 @@ const Experience = ({
             experience={exp}
             openDescription={openDescription}
             descriptionOpen={descriptionOpen}
+            element={element}
 
           />
         ))}

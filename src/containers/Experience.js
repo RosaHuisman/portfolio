@@ -5,7 +5,8 @@ import {clickOpenDescription} from '../store/actions'
 
 const mapStateToProps = (state) => ({
     experiences: state.experiences,
-    descriptionOpen: state.descriptionOpen, 
+    descriptionOpen: state.descriptionOpen,
+    element: state.element, 
 });
 
 const mapDispatchToProps = (dispatch) => ({

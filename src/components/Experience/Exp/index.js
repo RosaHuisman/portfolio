@@ -8,10 +8,11 @@ const Exp = ({
   experience,
   openDescription,
   descriptionOpen,
+  element
 }) => {
 
-  const handleDescription = () => {
-    openDescription(experience.title);
+  const handleDescription = (evt) => {
+    openDescription(evt.target.title);
   }
 
 const maxlimit = 230;
@@ -24,13 +25,13 @@ const maxlimit = 230;
         <p className="exp__place">{experience.place}</p>
         <h3 className="exp__subtitle">{experience.subtitle}</h3>
         
-          { ((experience.description).length > maxlimit) && !descriptionOpen ? (
-              <p className="exp__description" onClick={handleDescription}>
+          { ((experience.description).length > maxlimit) && (element !== experience.title) ? (
+              <p className="exp__description" onClick={handleDescription} title={experience.title}>
                 {(((experience.description).substring(0,maxlimit-3)) + " . . . " + " Lire la suite")}
               </p>
           ):((experience.description).length <= maxlimit) ? (
             <p className="exp__description">{experience.description}</p>
-         ): <p className="exp__description" onClick={handleDescription}>{experience.description}</p>
+         ): <p className="exp__description" onClick={handleDescription} title={experience.title}>{experience.description}</p>
          
           }
           
