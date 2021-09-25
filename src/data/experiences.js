@@ -1,5 +1,6 @@
 const experiences = [
     {
+        id: 1,
         title: 'Product Owner & développeuse Front-End',
         date: 'août - septembre 2021',
         place: 'Ecole O\'clock',
@@ -10,6 +11,7 @@ const experiences = [
         link_project: "https://notabebe.netlify.app/",
     },
     {
+        id:2,
         title: "Développement site d'une mairie",
         date: '2021 - 2017',
         place: "Mairie de Cardet (30350)",
@@ -20,6 +22,7 @@ const experiences = [
     
     },
     {
+        id:3,
         title: 'Employée polyvalente restaurant & camping',
         date: '2020 - 2007',
         place: 'Camping Beau Rivage à Cardet (30350)',
