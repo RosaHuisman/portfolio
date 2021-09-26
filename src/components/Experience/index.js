@@ -10,6 +10,7 @@ const Experience = ({
   element
 }) => {
     return (
+      <>
       <div className="experience">
         {experiences.map((exp) => (
           <Exp
@@ -22,6 +23,7 @@ const Experience = ({
           />
         ))}
       </div>
+      </>
      
 );
 }

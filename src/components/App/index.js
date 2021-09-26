@@ -12,11 +12,13 @@ import Contact from '../../components/Contact'
 
 
 function App() {
-
+  
   return (
+   
     <div className="app">
+      
         	<Switch>
-        		<Route path="/" exact>
+        		<Route path="/" exact >
               <Header />
               <Intro />
         		</Route>
