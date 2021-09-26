@@ -1,4 +1,6 @@
 import experiencesData from '../data/experiences'
+import formationsData from '../data/formations'
+
 
 import {
   CLICK_IMAGE,
@@ -11,7 +13,8 @@ export const initialState = {
   cvOpen: false,
   experiences: experiencesData,
   descriptionOpen: false,
-  element: '', 
+  element: '',
+  formations: formationsData, 
 };
 
 const reducer = (state = initialState, action = {}) => {

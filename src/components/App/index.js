@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Intro from '../../containers/Intro'
 import Header from '../../components/Header'
 import Experience from '../../containers/Experience'
-import Formation from '../../components/Formation'
+import Formation from '../../containers/Formation'
 import Projets from '../../components/Projets'
 import Contact from '../../components/Contact'
 
