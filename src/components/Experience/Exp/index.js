@@ -17,8 +17,8 @@ const Exp = ({
 
 const maxlimit = 230;
 
-console.log(experience.title)
-console.log(element)
+//console.log(experience.title)
+//console.log(element)
 
 
     return (
@@ -31,35 +31,33 @@ console.log(element)
           { ((experience.description).length <= maxlimit) ? (
             <p className="exp__description">{experience.description}</p>
               
-          ): ((experience.description).length > maxlimit) && !descriptionOpen ? (
+          ): ((experience.description).length > maxlimit) && !descriptionOpen && (experience.title !== element) ? (
             
             <p className="exp__description" onClick={handleDescription} title={experience.title}>
                 {(((experience.description).substring(0,maxlimit-3)) + " . . . Lire la suite")}
               </p>
               
-          ): (experience.title === element) ? (
-            
+          ): experience.title === element ? (
+
             <p className="exp__description" onClick={handleDescription} title={experience.title}>{experience.description}</p>
-              
+
           ): 
           <p className="exp__description" onClick={handleDescription} title={experience.title}>
                 {(((experience.description).substring(0,maxlimit-3)) + " . . . Lire la suite")}
               </p>
           }
           
-          
-        
         
         {experience.link_youtube ? (
-          <Link to={{ pathname: experience.link_youtube }} target="_blank"> Présentation Youtube </Link>
+          <Link to={{ pathname: experience.link_youtube }} className="exp__link" target="_blank"> Présentation Youtube </Link>
         ) : null
         }
         {experience.link_github ? (
-        <Link to={{ pathname: experience.link_github }} target="_blank"> Repo Github </Link>
+        <Link to={{ pathname: experience.link_github }} className="exp__link" target="_blank"> Repo Github </Link>
         ) : null
         }
         {experience.link_project ? (
-        <Link to={{ pathname: experience.link_project }} target="_blank"> Site en ligne </Link>
+        <Link to={{ pathname: experience.link_project }} className="exp__link" target="_blank"> Site en ligne </Link>
         ) : null
         }
 
