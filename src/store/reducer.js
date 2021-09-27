@@ -4,7 +4,11 @@ import experiencesData from '../data/experiences'
 import {
   CLICK_IMAGE,
   CLICK_CV,
-  CLICK_OPEN_DESCRIPTION
+  CLICK_OPEN_DESCRIPTION,
+  CHANGE_VALUE,
+  INPUT_EMPTY,
+  MESSAGE_SEND,
+
 } from './actions'
 
 export const initialState = {
@@ -13,6 +17,12 @@ export const initialState = {
   experiences: experiencesData,
   descriptionOpen: false,
   element: '',
+  username: '',
+  message: '',
+  reply_to: '',
+  emptymessage: '',
+  successmessage: '',
+  
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -34,6 +44,28 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         descriptionOpen: !state.descriptionOpen,
         element:action.element,
+      }
+    }
+    case CHANGE_VALUE: {
+      return {
+        ...state,
+        [action.key]: action.value
+      }
+    }
+    case INPUT_EMPTY: {
+      return {
+        ...state,
+        emptymessage: 'Merci de remplir tous les champs'
+      }
+    }
+    case MESSAGE_SEND: {
+      return {
+        ...state,
+        username: '',
+        message: '',
+        reply_to: '',
+        emptymessage: '',
+        successmessage: 'Votre message a bien été envoyé, je vous remercie'
       }
     }
     default:

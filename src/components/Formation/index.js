@@ -2,9 +2,7 @@ import React from 'react'
 import './style.scss';
 
 
-const Formation = ({
-  
-}) => {
+const Formation = () => {
     return (
       <div className="formation"> 
         <div className="formation__diploma">

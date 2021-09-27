@@ -40,7 +40,6 @@ React.useEffect(() => {
                   <a className="header__firstsection__dropmenu__element" {...itemProps[0]} href='/' >Accueil</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[1]} href='/experience'>Expérience</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[2]} href='/formation'>Formation</a>
-                  <a className="header__firstsection__dropmenu__element" {...itemProps[3]} href='/projets'>Projets</a>
                   <a className="header__firstsection__dropmenu__element" {...itemProps[4]} href='/contact'>Contact</a>
               </div>
 
