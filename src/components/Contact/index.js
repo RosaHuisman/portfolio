@@ -2,12 +2,8 @@ import React from 'react'
 import './style.scss';
 
 import Field from '../../containers/Field'
-
 import { send } from 'emailjs-com';
-
 import Swal from 'sweetalert2'
-
-
 
 const Contact = ({ 
   username, 
@@ -17,7 +13,9 @@ const Contact = ({
   emptymessage,
   contactSuccess,
   successmessage,
-  changeTextareaValue
+  changeTextareaValue,
+  isLoading,
+  loading,
 }) => {
 
   const data = {
@@ -36,7 +34,9 @@ const Contact = ({
 
     if (username === '' || message === '' || reply_to === '') {
       inputEmpty();
+
     } else {
+      isLoading()
       send(
         'service_0qbltmc',
         'template_jzlv1z9',
@@ -74,22 +74,22 @@ const Contact = ({
                 placeholder='Votre adresse mail'
                 value={reply_to}
                 className='field__input'
-
               />
-              
               <textarea
                   rows={4}
                   placeholder='Votre message'
                   value={message}
                   className='contact__textarea'
                   onChange={handleChange}
-
                />
-                 
-              <button type='submit' className="contact__submit"> Submit </button>
+              {loading ? <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>: null}  
+              <button type='submit' className="contact__submit"> Envoyer </button>
            </form>
-           {emptymessage}
-           {successmessage}
+           
+           {emptymessage ? <p className="contact__message">{emptymessage}</p> : null}
+           {successmessage ? <p className="contact__message">{successmessage}</p> : null}
+           
+           
         </div>
        
   );

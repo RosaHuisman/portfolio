@@ -9,6 +9,7 @@ import {
   INPUT_EMPTY,
   MESSAGE_SEND,
   CHANGE_TEXTAREA_VALUE,
+  SET_LOADING
 
 } from './actions'
 
@@ -23,6 +24,7 @@ export const initialState = {
   reply_to: '',
   emptymessage: '',
   successmessage: '',
+  loading: false,
   
 };
 
@@ -68,11 +70,18 @@ const reducer = (state = initialState, action = {}) => {
     case MESSAGE_SEND: {
       return {
         ...state,
+        loading: false,
         username: '',
         message: '',
         reply_to: '',
         emptymessage: '',
         successmessage: 'Votre message a bien été envoyé, je vous remercie'
+      }
+    }
+    case SET_LOADING: {
+      return {
+        ...state,
+        loading: true 
       }
     }
     default:
