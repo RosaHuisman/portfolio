@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Contact from '../components/Contact';
 
-import { inputIsEmpty, messageSend } from '../store/actions'
+import { inputIsEmpty, messageSend, changeTextareaValue } from '../store/actions'
 
 const mapStateToProps = (state) => ({
     username: state.username,
@@ -19,6 +19,10 @@ const mapDispatchToProps = (dispatch) => ({
 
     contactSuccess: () => {
         dispatch(messageSend())
+    },
+    
+    changeTextareaValue: (value) => {
+        dispatch(changeTextareaValue(value))
     }
     
 });

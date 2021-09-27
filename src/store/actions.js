@@ -4,6 +4,7 @@ export const CLICK_OPEN_DESCRIPTION = 'CLICK_OPEN_DESCRIPTION'
 export const CHANGE_VALUE = 'CHANGE_VALUE'
 export const INPUT_EMPTY = 'INPUT_EMPTY'
 export const MESSAGE_SEND = 'MESSAGE_SEND'
+export const CHANGE_TEXTAREA_VALUE = 'CHANGE_TEXTAREA_VALUE'
 
 export const clickOnImage = () => ({
     type: CLICK_IMAGE
@@ -30,4 +31,9 @@ export const inputIsEmpty = () => ({
 
 export const messageSend = () => ({
     type: MESSAGE_SEND,
+})
+
+export const changeTextareaValue = (value)=> ({
+    type: CHANGE_TEXTAREA_VALUE,
+    value
 })

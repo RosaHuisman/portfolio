@@ -17,6 +17,7 @@ const Contact = ({
   emptymessage,
   contactSuccess,
   successmessage,
+  changeTextareaValue
 }) => {
 
   const data = {
@@ -25,6 +26,10 @@ const Contact = ({
     reply_to,
   };
   
+  const handleChange = (evt) => {
+    evt.preventDefault();
+  changeTextareaValue(evt.target.value);
+};
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -54,11 +59,12 @@ const Contact = ({
 
   return (
         <div className="contact" >
+          <p className="contact__text"> Si vous souhaitez m'écrire, veuillez remplir le formulaire juste ici, et je vous répondrai avec plaisir. </p>
             <form onSubmit={onSubmit}>
               <Field
                 type='text'
                 name='username'
-                placeholder='votre nom'
+                placeholder='Votre nom'
                 value={username}
                 className='field__input'
               />
@@ -70,16 +76,17 @@ const Contact = ({
                 className='field__input'
 
               />
-              <Field
-                type='textarea'
-                name='message'
-                placeholder='Votre message'
-                value={message}
-                className='field__input'
+              
+              <textarea
+                  rows={4}
+                  placeholder='Votre message'
+                  value={message}
+                  className='contact__textarea'
+                  onChange={handleChange}
 
-                
-              />
-              <button type='submit'> Submit </button>
+               />
+                 
+              <button type='submit' className="contact__submit"> Submit </button>
            </form>
            {emptymessage}
            {successmessage}

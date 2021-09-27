@@ -1,13 +1,14 @@
 .field {
-    margin-bottom: 1rem;
    
     &__input {
         height: 2.3rem;
         background-color: #bdb026b0;
         border: none; 
         padding: .5rem;
-        font-size: 1em;
-        font-weight: bold;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        width: 70%;
+
 
     }
 }

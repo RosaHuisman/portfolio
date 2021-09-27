@@ -8,6 +8,7 @@ import {
   CHANGE_VALUE,
   INPUT_EMPTY,
   MESSAGE_SEND,
+  CHANGE_TEXTAREA_VALUE,
 
 } from './actions'
 
@@ -50,6 +51,12 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         [action.key]: action.value
+      }
+    }
+    case CHANGE_TEXTAREA_VALUE: {
+      return {
+        ...state,
+        message: action.value
       }
     }
     case INPUT_EMPTY: {

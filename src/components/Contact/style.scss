@@ -1,4 +1,34 @@
 .contact {
     cursor: pointer;
     text-align: center;
+
+    &__text {
+        display: block;
+        margin: 2rem;
+        background-color: #ffffff5f;
+           box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+             -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+             -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+        padding: 1rem .5rem;
+    }
+
+    &__textarea {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #bdb026b0;
+        margin-bottom: 1rem;
+        width: 70%;
+        padding: .5rem;
+
+    }
+
+    &__submit {
+        background-color: #bdb026;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 1rem;
+        font-size: 1.1em;
+        border-radius: 5px;
+    }
 }
