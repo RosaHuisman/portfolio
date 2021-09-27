@@ -1,5 +1,4 @@
 import experiencesData from '../data/experiences'
-import formationsData from '../data/formations'
 
 
 import {
@@ -14,7 +13,6 @@ export const initialState = {
   experiences: experiencesData,
   descriptionOpen: false,
   element: '',
-  formations: formationsData, 
 };
 
 const reducer = (state = initialState, action = {}) => {
