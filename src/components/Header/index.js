@@ -48,6 +48,15 @@ React.useEffect(() => {
 
           </div>
 
+          <div className="header__firstsection__menudesktop">
+
+            <a className="header__firstsection__menudesktop__link" href='/'>Accueil</a>
+            <a className="header__firstsection__menudesktop__link" href='/experience'>Expérience</a>
+            <a className="header__firstsection__menudesktop__link" href='/formation'>Formation</a>
+            <a className="header__firstsection__menudesktop__link" href='/contact'>Contact</a>
+
+          </div>
+
          
 
           <div className="header__firstsection__social">
