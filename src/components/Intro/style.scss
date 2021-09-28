@@ -165,7 +165,7 @@
 
             @media (min-width: 1024px) {
                 text-align: left;
-                font-size: 1.1em;
+                font-size: 1em;
                 font-weight: bold;
                 //margin: 0 1rem; 
                 //padding: 1rem;
@@ -186,9 +186,11 @@
             &__link {
                 text-decoration: none;
                 color: black;
+                font-size: .7rem;
                 &:hover {
                     text-decoration: underline;
                     color: #bdb026;
+                    
                 }
             }
         }
