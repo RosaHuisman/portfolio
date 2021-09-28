@@ -188,6 +188,12 @@
                 text-decoration: none;
                 color: black;
                 font-size: .7rem;
+
+                @media (min-width: 1024px) {
+                    text-decoration: none;
+                color: black;
+                font-size: .9rem;           
+                }
                 &:hover {
                     text-decoration: underline;
                     color: #bdb026;
