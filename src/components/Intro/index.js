@@ -7,6 +7,7 @@ import cv from '../../images/CV_image.jpg'
 import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
 import { GiCandleLight } from 'react-icons/gi'
 import { ImSearch } from 'react-icons/im'
+import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
 
 const Intro = ({
   clickImage,
@@ -54,7 +55,7 @@ const handleClickCV = () => {
             </div>
 
             <p className={ isOpen ? "intro__text__open" : "intro__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. 
+            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter dans la rubrique correspondante.  
 
             </p>
             
@@ -63,9 +64,12 @@ const handleClickCV = () => {
             <button className={ isOpen ? "intro__text__back__open" : "intro__text__back" } onClick={onClickImage} >Retour</button>
 
           <div className={ isOpen || cvOpen ? "intro__meta__open" : "intro__meta" }>
+            <p> <AiOutlinePhone/> 06.73.36.90.50 </p>
+            <p> <AiOutlineMail/> <a href="mailto:rosa.huisman@gmail.com" rel="noreferrer" className="intro__meta__link"> rosa.huisman@gmail.com</a>
+ </p>
             <p> <GiCandleLight/> 33 ans </p>
-             <p> <ImSearch /> En recherche d'emploi </p>
-             <p> <TiWeatherSunny /> Sud de la France </p>
+            <p> <ImSearch /> En recherche d'emploi </p>
+            <p> <TiWeatherSunny /> Sud de la France </p>
           </div>
 
           <div className="intro__cv">

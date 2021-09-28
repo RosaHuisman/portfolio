@@ -46,7 +46,7 @@
             max-width: 300px;
 
             @media (min-width: 1024px) {
-                width: 100%;
+                width: 90%;
                 margin: 0;
                 border-radius: 5px;
                 transition: 2s;
@@ -107,7 +107,7 @@
                 @media (min-width: 1024px) {
                     font-size: 1.1em;
                     margin: 1rem;
-                    padding: 6rem 1rem;
+                    padding: 1rem;
                     text-align: justify;
                     background-color: #ffffff5f;
                     box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
@@ -142,7 +142,7 @@
                         margin: 4rem 1rem 0 1rem;
                         float: left;
                         position: absolute;
-                        top: 60%;
+                        top: 75%;
                         left: 41%;
                     }
                 }
@@ -177,11 +177,19 @@
                 border-radius: 5px;
                 width: 42%;
                 margin-top: 2rem;
-                line-height: 2em;              
+                line-height: 1.2em;              
             }
 
             &__open {
                 display: none;
+            }
+            &__link {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                    color: #bdb026;
+                }
             }
         }
         
@@ -207,8 +215,14 @@
                     margin: 4rem 1rem 0 1rem;
                     float: left;
                     position: absolute;
-                    top: 60%;
+                    top: 75%;
                     left: 28%;
+
+                    &:hover {
+                        color: #bdb026;
+                        background-color: #494949;
+
+                    }
                 }
 
                 &__open{
@@ -226,13 +240,16 @@
 
                 @media (min-width: 1024px) {
                     width: 95%;
-                    left: 20%;
                     position: absolute;
-                    top: 4%;
+                    left: 20%;
+                    top: 7%;
                     max-width: 900px;
+
+               
                     }
                 
             }
+            
             &__close {
                 display: none;
             }
