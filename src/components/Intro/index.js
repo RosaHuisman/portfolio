@@ -55,7 +55,7 @@ const handleClickCV = () => {
             </div>
 
             <p className={ isOpen ? "intro__text__open" : "intro__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter dans la rubrique correspondante.  
+            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
 
             </p>
             
