@@ -92,6 +92,14 @@
             font-size: 3em;
             font-family: 'Birthstone Bounce', cursive;
 
+            @media (min-width: 1024px) {
+                text-align: center;
+                color: #67805c;
+                font-size: 7em;
+                font-family: 'Birthstone Bounce', cursive;
+                
+              }
+
 
         }
 
@@ -105,11 +113,24 @@
                 margin-right: 5px;
                 color: #222222;
                 font-size: .8em;
+
+                @media (min-width: 1024px) {
+                    margin-right: 0;
+                    color: #222222;
+                    font-size: 1.8em;
+                    
+                  }
             }
             &__designation {
                 
                 color: #222222;
                 font-size: 1.1em;
+
+                @media (min-width: 1024px) {
+                    color: #222222;
+                    font-size: 2.5em;
+                    
+                  }
 
             }
         }
