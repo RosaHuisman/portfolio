@@ -10,6 +10,17 @@
              -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
              -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
         padding: 1rem .5rem;
+
+        @media (min-width: 1024px) {
+          display: block;
+          margin: 2rem 11rem;
+          background-color: #ffffff5f;
+             box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+               -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+               -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+          padding: 1rem .5rem;
+  
+      }
     }
 
     &__textarea {

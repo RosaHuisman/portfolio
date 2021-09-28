@@ -13,7 +13,7 @@ const experiences = [
     {
         id:2,
         title: "Développement site internet d'une mairie",
-        date: '2021 - 2017',
+        date: '2016 à  aujourd\'hui',
         place: "Mairie de Cardet (30350)",
         subtitle: "site Wordpress",
         description: "Création & mise à jour du site internet d'une mairie, avec Wordpress, en autodidacte.",

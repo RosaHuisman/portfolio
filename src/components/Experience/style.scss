@@ -2,5 +2,16 @@
     //background-color: #0c8a60;
     padding: 1rem;
 
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+
+    }
+
 }
 

@@ -1,6 +1,17 @@
 .formation {
     padding: 1rem;
 
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+
+    }
+
     &__diploma {
         margin-bottom: 1rem;
         padding: 1rem;
@@ -9,6 +20,13 @@
            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
         box-sizing: border-box; 
+
+        @media (min-width: 1024px) {
+            box-sizing: border-box;
+            margin: .5rem;
+            width: 46%;
+    
+        }
     
            &__title {
                font-size: 2em;
