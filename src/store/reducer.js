@@ -34,6 +34,7 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         isOpen: !state.isOpen,
+        cvOpen: false,
       };
     }
     case CLICK_CV: {
