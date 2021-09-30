@@ -151,7 +151,7 @@ const handleClickCV = () => {
           
           <div className={ cvOpen ? "introdt__right__hidden" : "introdt__right" }> 
 
-          <div className="introdt__right__test">
+          <div className="introdt__right__container">
 
           <p className={ isOpen ? "introdt__right__text__open" : "introdt__right__text" }>
             <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
@@ -159,10 +159,11 @@ const handleClickCV = () => {
             </p>
 
           <img src={me} className={ isOpen ? "introdt__right__image__open" : "introdt__right__image" } alt="Rosa Huisman" onClick={onClickImage} />   
-          <p onClick={onClickImage} className={ isOpen ? "introdt__right__about__open" : "intro__firstsection__about" }>Cliquez ici <TiArrowForward/>  </p>
-
-
           </div>
+          <p onClick={onClickImage} className={ isOpen ? "introdt__right__about__open" : "introdt__right__about" }>Cliquez ici <TiArrowForward/>  </p>
+
+
+        
 
             <button className={ isOpen ? "introdt__right__text__back__open" : "introdt__right__text__back" } onClick={onClickImage} >Retour</button>
           
