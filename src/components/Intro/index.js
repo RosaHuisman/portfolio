@@ -124,12 +124,12 @@ const handleClickCV = () => {
               </div>
 
               <div className={ isOpen || cvOpen ? "introdt__left__contact__open" : "introdt__left__contact" }>
-                  <p> <AiOutlinePhone/> 06.73.36.90.50 </p>
+                  <p className="introdt__left__contact__tel" > <AiOutlinePhone/> 06.73.36.90.50 </p>
                   <p> <a href="mailto:rosa.huisman@gmail.com" rel="noreferrer" className="introdt__left__contact__link"> <AiOutlineMail/> rosa.huisman@gmail.com</a>
                   </p>
-                  <p> <GiCandleLight/> 33 ans </p>
-                  <p> <ImSearch /> En recherche d'emploi </p>
-                  <p> <TiWeatherSunny /> Sud de la France </p>
+                  <p className="introdt__left__contact__age"> <GiCandleLight/> 33 ans </p>
+                  <p className="introdt__left__contact__job"> <ImSearch /> En recherche d'emploi </p>
+                  <p className="introdt__left__contact__myhome"> <TiWeatherSunny /> Sud de la France </p>
               </div> 
 
               <div className="introdt__left__cv">
