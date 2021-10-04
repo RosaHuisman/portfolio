@@ -9,6 +9,17 @@ const experiences = [
         link_youtube: "https://www.youtube.com/watch?v=PHYfwht2dJU",
         link_github: "https://github.com/RosaHuisman/NotaBebe",
         link_project: "https://notabebe.netlify.app/",
+        image: 'notabebe.png'
+    },
+    {
+        id: 4,
+        title: 'Développeuse Front-end d\'une application de recettes ',
+        date: 'août 2021 - spé React',
+        place: 'Ecole O\'clock',
+        subtitle: "O'Recipes",
+        description: "Application React de recettes de cuisine depuis un serveur distant. Appels API avec Axios. Gestion du state avec React Redux. Projet de formation",
+        link_github: "https://github.com/RosaHuisman/Recettes",
+        image: 'recettes.png'
     },
     {
         id:2,
@@ -18,6 +29,7 @@ const experiences = [
         subtitle: "site Wordpress",
         description: "Création & mise à jour du site internet d'une mairie, avec Wordpress, en autodidacte.",
         link_project: "https://mairiedecardet.fr/",
+        image: 'mairie_de_cardet.png'
 
     
     },
@@ -28,7 +40,7 @@ const experiences = [
         place: 'Camping Beau Rivage à Cardet (30350)',
         subtitle: "Chef de cuisine, cuisinière, pizzaïola, barmaid",
         description: "J'ai pendant de nombreuses années travaillé dans un camping. J'étais en charge du restaurant, la gestion des stocks et du personnel. J'ai beaucoup appris pendant ces années, le contact client, le service. C'était très enrichissant. Mais le saisonnier est difficile et surtout après l'arrivée de mes 2 enfants, j'ai choisi de me former pour enfin exercer un métier qui me passionne. ",    
-        
+        image: 'camping_beau_rivage.png'
     }
 ]
 

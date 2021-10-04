@@ -6,7 +6,7 @@ const Formation = () => {
     return (
       <div className="formation"> 
         <div className="formation__diploma">
-          <h2 className="formation__diploma__title">Formation Développeur Web et Web Mobile, Niveau V spécialisation Réact </h2>
+          <h2 className="formation__diploma__title">Formation Développeur Web et Web Mobile, Niveau V spécialisation React </h2>
           <p className="formation__diploma__date">Mars à septembre 2021</p>
           <p className="formation__diploma__place">Ecole O'clock, labelisée Grande Ecole du Numérique</p>
           <p className="formation__diploma__description"> 5 mois de formation :
@@ -15,7 +15,7 @@ const Formation = () => {
               3 mois de socle : HTML5, CSS3, JavaScript, NodeJS, PostgreSQL, Express, Sequelize.
             </li>
               <li>
-              1 mois de spécialisation : Réact / Redux. 
+              1 mois de spécialisation : React / Redux. 
               </li>
               <li>
                 1 mois de projet en groupe : Product Owner & Développeuse Front-end pour le projet NotaBebe.

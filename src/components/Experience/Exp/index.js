@@ -3,7 +3,6 @@ import './style.scss';
 
 import {Link} from 'react-router-dom'
 
-
 const Exp = ({
   experience,
   openDescription,
@@ -17,12 +16,14 @@ const Exp = ({
 
 const maxlimit = 230;
 
-//console.log(experience.title)
-//console.log(element)
+
+
 
 
     return (
       <div className="exp">
+        <Link to={{ pathname: experience.link_project }} target="_blank"> <img src={require(`../../../images/${experience.image}`).default} alt={experience.image} className="exp__image"/> </Link>
+        
         <h2 className="exp__title">{experience.title}</h2>
         <p className="exp__date">{experience.date}</p>
         <p className="exp__place">{experience.place}</p>
