@@ -34,6 +34,35 @@ const experiences = [
     
     },
     {
+        id:6,
+        title: 'Développeuse Back-end d\'une application recensant les Pokemon',
+        date: 'juin 2021',
+        place: 'Ecole O\'clock',
+        subtitle: "Pokedex",
+        description: "Application qui liste les pokemons avec des options de filtrage. Technos: Node, Express, PostgreSQL, Sequelize. Réalisée dans le cadre d'un projet de formation.", 
+        link_github: "https://github.com/RosaHuisman/Pokedex",
+        image: 'background.png'
+    },
+    {
+        id:7,
+        title: 'Développeuse Back-end d\'une application affichant des cartes',
+        date: 'mai 2021',
+        place: 'Ecole O\'clock',
+        subtitle: "Triple-Triad-Deck-Builder",
+        description: "Application qui affiche des cartes avec des options de filtrage et de recherche. Technos: Node, Express, Express-session, PostgreSQL, dotenv. Réalisée dans le cadre d'un projet de formation.", 
+        link_github: "https://github.com/RosaHuisman/Triple-Triad-Deck-Builder",
+        image: 'background.png'
+    },
+    {
+        id:5,
+        title: 'Développeuse Front-end de ce portfolio',
+        date: '2021 à aujourd\'hui',
+        place: '',
+        subtitle: "mon Portfolio",
+        description: "Application React pour montrer qui je suis, mes projets et mes réalisations",    
+        image: 'background.png'
+    },
+    {
         id:3,
         title: 'Employée polyvalente restaurant & camping',
         date: '2020 - 2007',

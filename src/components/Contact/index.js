@@ -59,7 +59,7 @@ const Contact = ({
 
   return (
         <div className="contact" >
-          <p className="contact__text"> Si vous souhaitez m'écrire, veuillez remplir le formulaire juste ici, et je vous répondrai avec plaisir. </p>
+          <p id="test" className="contact__text"> Si vous souhaitez m'écrire, veuillez remplir le formulaire juste ici, et je vous répondrai avec plaisir. </p>
             <form onSubmit={onSubmit}>
               <Field
                 type='text'
@@ -89,6 +89,13 @@ const Contact = ({
            {emptymessage ? <p className="contact__message">{emptymessage}</p> : null}
            {successmessage ? <p className="contact__message">{successmessage}</p> : null}
            
+
+           <ul className="cameleons">
+            <li className="cameleon"> Riri</li>
+            <li className="cameleon"> Fifi</li>
+            <li className="cameleon"> Loulou</li>
+
+            </ul>
            
         </div>
        
