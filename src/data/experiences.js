@@ -51,7 +51,7 @@ const experiences = [
         subtitle: "Triple-Triad-Deck-Builder",
         description: "Application qui affiche des cartes avec des options de filtrage et de recherche. Technos: Node, Express, Express-session, PostgreSQL, dotenv. Réalisée dans le cadre d'un projet de formation.", 
         link_github: "https://github.com/RosaHuisman/Triple-Triad-Deck-Builder",
-        image: 'background.png'
+        image: 'triple_triad_deck_builder.png'
     },
     {
         id:5,
@@ -60,7 +60,7 @@ const experiences = [
         place: '',
         subtitle: "mon Portfolio",
         description: "Application React pour montrer qui je suis, mes projets et mes réalisations",    
-        image: 'background.png'
+        image: 'portfolio.png'
     },
     {
         id:3,
