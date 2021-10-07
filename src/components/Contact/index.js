@@ -89,13 +89,6 @@ const Contact = ({
            {emptymessage ? <p className="contact__message">{emptymessage}</p> : null}
            {successmessage ? <p className="contact__message">{successmessage}</p> : null}
            
-
-           <ul className="cameleons">
-            <li className="cameleon"> Riri</li>
-            <li className="cameleon"> Fifi</li>
-            <li className="cameleon"> Loulou</li>
-
-            </ul>
            
         </div>
        
