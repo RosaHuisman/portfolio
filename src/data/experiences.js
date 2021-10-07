@@ -41,7 +41,7 @@ const experiences = [
         subtitle: "Pokedex",
         description: "Application qui liste les pokemons avec des options de filtrage. Technos: Node, Express, PostgreSQL, Sequelize. Réalisée dans le cadre d'un projet de formation.", 
         link_github: "https://github.com/RosaHuisman/Pokedex",
-        image: 'background.png'
+        image: 'pokedex.png'
     },
     {
         id:7,
