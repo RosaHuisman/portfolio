@@ -4,6 +4,11 @@ import './style.scss';
 import me from '../../images/me.jpg'
 import cv from '../../images/CV_Rosa_Huisman.png'
 
+import drawwomen from '../../images/fille_a_lordinateur.png'
+
+//import drawwomen from '../../images/fille_allongee_ordinateur.png'
+
+
 
 import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
 import { GiCandleLight } from 'react-icons/gi'
@@ -158,9 +163,12 @@ const handleClickCV = () => {
 
             </p>
 
-          <img src={me} className={ isOpen ? "introdt__right__image__open" : "introdt__right__image" } alt="Rosa Huisman" onClick={onClickImage} />   
+          <img src={drawwomen} className={ isOpen ? "introdt__right__image__draw__open" : "introdt__right__image__draw" } alt="Rosa Huisman" onClick={onClickImage} />
+          
+          <img src={me} className={ isOpen ? "introdt__right__image__me__open" : "introdt__right__image__me" } alt="Rosa Huisman" onClick={onClickImage} />    
           </div>
-          <p onClick={onClickImage} className={ isOpen ? "introdt__right__about__open" : "introdt__right__about" }>Cliquez ici <TiArrowForward/>  </p>
+          
+          <p onClick={onClickImage} className={ isOpen ? "introdt__right__about__open" : "introdt__right__about" }>Plus d'infos <TiArrowForward/>  </p>
 
 
         
