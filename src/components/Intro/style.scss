@@ -315,17 +315,11 @@ div span {opacity:0;}
                 border-radius: 5px;
                 margin-top: 2rem;
                 line-height: 1.4em; 
-                padding: 1rem;  
-                border: 2px red solid;
+                padding: 1rem; 
 
             &__open {
                 display: none;
-            }
-
-            &__contact::before {
-                content: 'hello';
-            }
-
+        }
             &__link {
                 text-decoration: none;
                 color: black;
@@ -335,7 +329,112 @@ div span {opacity:0;}
                     text-decoration: underline;
                     color: #bdb026;
                     
+                    &:after {
+                        color: white;
+                        content: 'Ecrivez moi !';
+                        position: absolute;
+                        padding: 1rem 2rem;
+                        font-size: 1.1rem;
+	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        transform: translateX(20px) translateY(-15px);
+                        background-color: #bdb026;
+                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                        border-radius: 5px;
+
+                    }
+                    
                 }
+            }
+            &__tel {
+                &:hover {
+                    color: #bdb026;
+                    &:after {
+                        color: white;
+                        content: 'Parlons nous !';
+                        position: absolute;
+                        padding: 1rem 2rem;
+                        font-size: 1.1rem;
+	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        transform: translateX(20px) translateY(-15px);
+                        background-color: #bdb026;
+                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                        border-radius: 5px;
+
+                    }
+                }
+                
+            }
+            &__age {
+                &:hover {
+                    color: #bdb026;
+                    &:after {
+                        color: white;
+                        content: 'Et pas une seule ride !';
+                        position: absolute;
+                        padding: 1rem 2rem;
+                        font-size: 1.1rem;
+	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        transform: translateX(20px) translateY(-15px);
+                        background-color: #bdb026;
+                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                        border-radius: 5px;
+
+                    }
+                }
+                
+            }
+            &__job {
+                &:hover {
+                    color: #bdb026;
+                    &:after {
+                        color: white;
+                        content: 'Vous ne serez pas déçu.e!';
+                        position: absolute;
+                        padding: 1rem 2rem;
+                        font-size: 1.1rem;
+	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        transform: translateX(20px) translateY(-15px);
+                        background-color: #bdb026;
+                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                        border-radius: 5px;
+
+                    }
+                }
+                
+            }
+            &__myhome {
+                &:hover {
+                    color: #bdb026;
+                    &:after {
+                        color: white;
+                        content: 'Là où il fait toujours beau !';
+                        position: absolute;
+                        padding: 1rem 2rem;
+                        font-size: 1.1rem;
+	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                        transform: translateX(20px) translateY(-15px);
+                        background-color: #bdb026;
+                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                        border-radius: 5px;
+
+                    }
+                }
+                
             }
         }
 
@@ -405,10 +504,7 @@ div span {opacity:0;}
 
             }
 
-            
                 }
-
-    
 
     }
 
@@ -506,3 +602,41 @@ div span {opacity:0;}
 
     }
 }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-10-2 22:24:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

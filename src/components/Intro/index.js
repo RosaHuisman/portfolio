@@ -59,7 +59,7 @@ const handleClickCV = () => {
 
 
               <p className={ isOpen ? "intro__firstsection__text__open" : "intro__firstsection__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
+            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
 
             </p>
 
@@ -124,12 +124,12 @@ const handleClickCV = () => {
               </div>
 
               <div className={ isOpen || cvOpen ? "introdt__left__contact__open" : "introdt__left__contact" }>
-                  <p> <AiOutlinePhone/> 06.73.36.90.50 </p>
+                  <p className="introdt__left__contact__tel" > <AiOutlinePhone/> 06.73.36.90.50 </p>
                   <p> <a href="mailto:rosa.huisman@gmail.com" rel="noreferrer" className="introdt__left__contact__link"> <AiOutlineMail/> rosa.huisman@gmail.com</a>
                   </p>
-                  <p> <GiCandleLight/> 33 ans </p>
-                  <p> <ImSearch /> En recherche d'emploi </p>
-                  <p> <TiWeatherSunny /> Sud de la France </p>
+                  <p className="introdt__left__contact__age"> <GiCandleLight/> 33 ans </p>
+                  <p className="introdt__left__contact__job"> <ImSearch /> En recherche d'emploi </p>
+                  <p className="introdt__left__contact__myhome"> <TiWeatherSunny /> Sud de la France </p>
               </div> 
 
               <div className="introdt__left__cv">
@@ -154,7 +154,7 @@ const handleClickCV = () => {
           <div className="introdt__right__container">
 
           <p className={ isOpen ? "introdt__right__text__open" : "introdt__right__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>Réact/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
+            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
 
             </p>
 

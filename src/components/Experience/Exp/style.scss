@@ -14,6 +14,14 @@
 
     }
 
+    &__image {
+        width: 100%;
+        margin-bottom: 1rem;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
        &__title {
            font-size: 2em;
            font-weight: bold;
@@ -40,7 +48,7 @@
            background-color: #bdb026b0;
            border-radius: 5px;
            padding: 1rem;
-           text-align: justify;           
+           text-align: justify;
        }
 
        &__link {
