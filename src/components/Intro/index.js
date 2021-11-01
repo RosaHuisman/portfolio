@@ -11,11 +11,10 @@ import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
 import { GiCandleLight } from 'react-icons/gi'
 import { ImSearch } from 'react-icons/im'
 import { AiOutlinePhone, AiOutlineMail, AiFillHtml5 } from 'react-icons/ai'
-import { GrHtml5, GrCss3, GrReactjs, GrNode, GrGithub } from 'react-icons/gr'
+import { GrReactjs, GrNode, GrGithub } from 'react-icons/gr'
 import { SiRedux, SiJavascript } from 'react-icons/si'
 import { DiPostgresql, DiCss3 } from 'react-icons/di'
 import { BsBootstrap } from 'react-icons/bs'
-//import { SiExpress, SiSequelize } from "react-icons/si";
 
 const Intro = ({
   clickImage,

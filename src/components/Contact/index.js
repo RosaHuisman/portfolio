@@ -5,6 +5,9 @@ import Field from '../../containers/Field'
 import { send } from 'emailjs-com';
 import Swal from 'sweetalert2'
 
+import drawlyingwomen from '../../images/fille_allongee_ordinateur.png'
+
+
 const Contact = ({ 
   username, 
   message, 
@@ -59,6 +62,7 @@ const Contact = ({
 
   return (
         <div className="contact" >
+          <div>
           <p id="test" className="contact__text"> Si vous souhaitez m'écrire, veuillez remplir le formulaire juste ici, et je vous répondrai avec plaisir. </p>
             <form onSubmit={onSubmit}>
               <Field
@@ -88,6 +92,9 @@ const Contact = ({
            
            {emptymessage ? <p className="contact__message">{emptymessage}</p> : null}
            {successmessage ? <p className="contact__message">{successmessage}</p> : null}
+          </div>
+          
+          <img src={drawlyingwomen} className="contact__image" alt="Dessin fille allongée avec ordinateur" />
            
            
         </div>
