@@ -62,6 +62,8 @@ const Contact = ({
 
   return (
         <div className="contact" >
+           <img src={drawlyingwomen} className="contact__image" alt="Dessin fille allongée avec ordinateur" />
+
           <div>
           <p id="test" className="contact__text"> Si vous souhaitez m'écrire, veuillez remplir le formulaire juste ici, et je vous répondrai avec plaisir. </p>
             <form onSubmit={onSubmit}>
@@ -94,7 +96,7 @@ const Contact = ({
            {successmessage ? <p className="contact__message">{successmessage}</p> : null}
           </div>
           
-          <img src={drawlyingwomen} className="contact__image" alt="Dessin fille allongée avec ordinateur" />
+         <div>.</div>
            
            
         </div>

@@ -48,7 +48,7 @@
         font-size: 1.1em;
         border-radius: 5px;
         display: block;
-        margin:  auto;
+        margin: 2rem auto;
     }
     &__message {
         margin: 2rem auto;
@@ -62,14 +62,16 @@
     }
 
     &__image {
-      width: 400px;
+      width: 450px;
       height: 400px;
       @media (max-width: 1424px) {
-        width: 200px;
+        width: 250px;
         height: 200px;
     }
     @media (max-width: 1024px) {
-      display: none;
+       width: 230px;
+       height: 190px;
+       margin-bottom: 2rem;
   }
     }
 }
