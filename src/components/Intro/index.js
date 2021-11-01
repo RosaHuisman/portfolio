@@ -6,14 +6,16 @@ import cv from '../../images/CV_Rosa_Huisman.png'
 
 import drawwomen from '../../images/fille_a_lordinateur.png'
 
-//import drawwomen from '../../images/fille_allongee_ordinateur.png'
-
-
 
 import { TiArrowForward, TiWeatherSunny } from 'react-icons/ti';
 import { GiCandleLight } from 'react-icons/gi'
 import { ImSearch } from 'react-icons/im'
-import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlinePhone, AiOutlineMail, AiFillHtml5 } from 'react-icons/ai'
+import { GrHtml5, GrCss3, GrReactjs, GrNode, GrGithub } from 'react-icons/gr'
+import { SiRedux, SiJavascript } from 'react-icons/si'
+import { DiPostgresql, DiCss3 } from 'react-icons/di'
+import { BsBootstrap } from 'react-icons/bs'
+//import { SiExpress, SiSequelize } from "react-icons/si";
 
 const Intro = ({
   clickImage,
@@ -140,6 +142,8 @@ const handleClickCV = () => {
               <div className="introdt__left__cv">
               <button className={cvOpen ? "introdt__left__cv__button__open" : isOpen ? "introdt__right__text__cvbutton__open" : "introdt__left__cv__button" } onClick={handleClickCV}> Mon CV </button>
 
+              <button className={ isOpen && !cvOpen ? "introdt__right__text__back__open" : "introdt__right__text__back" } onClick={onClickImage} >Retour</button>
+
               <img src={cv} alt="CV de Rosa Huisman" className={cvOpen ? "introdt__left__cv__cvopen" : "introdt__left__cv__close" } />
 
               <div className="introdt__left__cv__buttons">
@@ -160,20 +164,29 @@ const handleClickCV = () => {
 
           <p className={ isOpen ? "introdt__right__text__open" : "introdt__right__text" }>
             <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
+            <div className={ isOpen ? "introdt__icons__open" : "introdt__icons" }>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__js"><SiJavascript/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__react"><GrReactjs/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__redux"><SiRedux/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__node"><GrNode/> </p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__html"><AiFillHtml5/> </p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__css"><DiCss3/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__postgresql"><DiPostgresql/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__git"><GrGithub/></p>
+              <p className="introdt__icons__open__icon introdt__icons__open__icon__bootstrap"><BsBootstrap/></p>
+              
+            </div>
 
             </p>
+            
 
           <img src={drawwomen} className={ isOpen ? "introdt__right__image__draw__open" : "introdt__right__image__draw" } alt="Rosa Huisman" onClick={onClickImage} />
           
           <img src={me} className={ isOpen ? "introdt__right__image__me__open" : "introdt__right__image__me" } alt="Rosa Huisman" onClick={onClickImage} />    
           </div>
-          
+        
           <p onClick={onClickImage} className={ isOpen ? "introdt__right__about__open" : "introdt__right__about" }>Plus d'infos <TiArrowForward/>  </p>
 
-
-        
-
-            <button className={ isOpen ? "introdt__right__text__back__open" : "introdt__right__text__back" } onClick={onClickImage} >Retour</button>
           
           </div>
 
