@@ -318,125 +318,54 @@ div span {opacity:0;}
                 line-height: 1.4em; 
                 padding: 1rem; 
 
+                &__element {
+                    &:hover {
+                        text-decoration: underline;
+                        color: #bdb026;
+                        
+                        &:after {
+                            color: white;
+                            position: absolute;
+                            padding: 1rem 2rem;
+                            font-size: 1.1rem;
+                            animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                                -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                            transform: translateX(20px) translateY(-15px);
+                            background-color: #bdb026;
+                                box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                                -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                                -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
+                            border-radius: 5px;
+    
+                        }
+                        
+                    }
+                    &__tel:hover:after {
+                        content: 'Parlons nous !';
+                    }
+                    &__link {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1rem;
+                        &:hover:after {
+                            content: 'Ecrivez moi !';
+                        }
+                    }
+                    
+                    &__age:hover:after {
+                        content: 'Et pas une seule ride !';
+                    }
+                    &__job:hover:after {
+                        content: 'Vous ne serez pas déçu.e!';
+                    }
+                    &__myhome:hover:after {
+                        content: 'Là où il fait toujours beau !';
+                    }
+                }
+
             &__open {
                 display: none;
         }
-            &__link {
-                text-decoration: none;
-                color: black;
-                font-size: 1rem;           
-                
-                &:hover {
-                    text-decoration: underline;
-                    color: #bdb026;
-                    
-                    &:after {
-                        color: white;
-                        content: 'Ecrivez moi !';
-                        position: absolute;
-                        padding: 1rem 2rem;
-                        font-size: 1.1rem;
-	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                        transform: translateX(20px) translateY(-15px);
-                        background-color: #bdb026;
-                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                        border-radius: 5px;
-
-                    }
-                    
-                }
-            }
-            &__tel {
-                &:hover {
-                    color: #bdb026;
-                    &:after {
-                        color: white;
-                        content: 'Parlons nous !';
-                        position: absolute;
-                        padding: 1rem 2rem;
-                        font-size: 1.1rem;
-	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                        transform: translateX(20px) translateY(-15px);
-                        background-color: #bdb026;
-                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                        border-radius: 5px;
-
-                    }
-                }
-                
-            }
-            &__age {
-                &:hover {
-                    color: #bdb026;
-                    &:after {
-                        color: white;
-                        content: 'Et pas une seule ride !';
-                        position: absolute;
-                        padding: 1rem 2rem;
-                        font-size: 1.1rem;
-	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                        transform: translateX(20px) translateY(-15px);
-                        background-color: #bdb026;
-                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                        border-radius: 5px;
-
-                    }
-                }
-                
-            }
-            &__job {
-                &:hover {
-                    color: #bdb026;
-                    &:after {
-                        color: white;
-                        content: 'Vous ne serez pas déçu.e!';
-                        position: absolute;
-                        padding: 1rem 2rem;
-                        font-size: 1.1rem;
-	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                        transform: translateX(20px) translateY(-15px);
-                        background-color: #bdb026;
-                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                        border-radius: 5px;
-
-                    }
-                }
-                
-            }
-            &__myhome {
-                &:hover {
-                    color: #bdb026;
-                    &:after {
-                        color: white;
-                        content: 'Là où il fait toujours beau !';
-                        position: absolute;
-                        padding: 1rem 2rem;
-                        font-size: 1.1rem;
-	                    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-                        transform: translateX(20px) translateY(-15px);
-                        background-color: #bdb026;
-                            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                            -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); 
-                        border-radius: 5px;
-
-                    }
-                }
-                
-            }
         }
 
         &__cv {
@@ -642,7 +571,7 @@ div span {opacity:0;}
                     content: 'Redux';
                 }
                 &__node:hover:after {
-                    content: 'Node';
+                    content: 'NodeJS';
                 }
                 &__html:hover:after {
                     content: 'HTML 5';
