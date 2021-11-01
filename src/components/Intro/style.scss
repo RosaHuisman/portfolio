@@ -61,7 +61,7 @@
             font-weight: bold;
             text-align: center;
             color: #494949;
-            transform: translateY(-1150%) translateX(55px) rotate(14deg);
+            transform: translateY(-1350%) translateX(55px) rotate(14deg);
             animation: flicker-1 5s linear infinite both;
             
             
@@ -171,6 +171,7 @@
             }
         }
         &__cv {
+            margin-bottom: 2rem;
             &__button {
                 padding: .8rem 1.3rem;
                 display: block;

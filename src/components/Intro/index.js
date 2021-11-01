@@ -109,9 +109,9 @@ const handleClickCV = () => {
               <button className={cvOpen ? "intro__secondsection__cv__closebutton__open" : "intro__secondsection__cv__closebutton" } onClick={handleClickCV}> <i className="close icon"></i></button> 
               <form method="get" action={cv}>
                 <button className={cvOpen ? "intro__secondsection__cv__dlbutton__open" : "intro__secondsection__cv__dlbutton" } type="submit"><i className="download icon"></i></button>
-            </form>
+              </form>
             </div>
-
+            <div>.</div>
 
           </div>
           
