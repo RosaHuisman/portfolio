@@ -59,7 +59,7 @@ const handleClickCV = () => {
               </div>
 
               <div className="intro__firstsection">
-
+                      <img src={drawwomen} className={ isOpen ? "intro__firstsection__image__draw__open" : "intro__firstsection__image__draw" } alt="dessin jeune fille avec ordinateur" onClick={onClickImage} />
                       <img src={me} className={ isOpen ? "intro__firstsection__image__open" : "intro__firstsection__image" } alt="Rosa Huisman" onClick={onClickImage} />   
                       <p onClick={onClickImage} className={ isOpen ? "intro__firstsection__about__open" : "intro__firstsection__about" }>Cliquez ici <TiArrowForward/>  </p>
 
@@ -179,7 +179,7 @@ const handleClickCV = () => {
             </p>
             
 
-          <img src={drawwomen} className={ isOpen ? "introdt__right__image__draw__open" : "introdt__right__image__draw" } alt="Rosa Huisman" onClick={onClickImage} />
+          <img src={drawwomen} className={ isOpen ? "introdt__right__image__draw__open" : "introdt__right__image__draw" } alt="dessin jeune fille avec ordinateur" onClick={onClickImage} />
           
           <img src={me} className={ isOpen ? "introdt__right__image__me__open" : "introdt__right__image__me" } alt="Rosa Huisman" onClick={onClickImage} />    
           </div>

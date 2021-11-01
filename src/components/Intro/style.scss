@@ -28,36 +28,40 @@
        &__firstsection {
            
         &__image {
-            display: block;
-            width: 60%;
-            margin: 0 auto;
-            border-radius: 5px;
-            transition: 2s;
-            max-width: 300px;
-
-           
+            display: none;
 
             &__open {
-                width: 31%;
+               width: 31%;
                 border-radius: 50%;
                 transition: 2s;
                 float: right;
                 margin: 0 0 0 2.3rem;
                 shape-outside: circle(50%);
                 transform: translateY(-25px);
-                
-                
-            }              
+            }
+            
+            &__draw {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                border-radius: 5px;
+                transition: 2s;
+                max-width: 300px;
+
+                &__open {
+                    display: none;
+                }
+            }
         }
         &__image:hover {
             opacity: 0.5;
         }
         &__about {
-            font-size: 1.2em;
+            font-size: .8em;
             font-weight: bold;
             text-align: center;
             color: #494949;
-            transform: translateY(-140%);
+            transform: translateY(-990%) translateX(55px) rotate(14deg);
             animation: flicker-1 5s linear infinite both;
             
             
