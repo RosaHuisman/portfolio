@@ -6,7 +6,9 @@ const experiences = [
         place: 'autodidacte',
         subtitle: "Pétanque",
         description: "Application web permettant de gérer les parties et scores pour un concours de pétanque, du tirage au sort des joueurs jusqu’au classement final.",
-        image: 'petanque.png'
+        image: 'petanque.png',
+        link_github: "https://github.com/RosaHuisman/petanque",
+        link_project: "https://petanque-beau-rivage.netlify.app/",
     },
     {
         id: 1,
