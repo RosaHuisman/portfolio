@@ -1,5 +1,16 @@
 const experiences = [
     {
+        id: 9,
+        title: 'Développeuse Front-End & Back-End',
+        date: 'janvier 2022 - en cours',
+        place: 'Simplon',
+        subtitle: "Photography",
+        description: "Application web permettant à une photographe professionnelle de partager les photos d’un shooting avec ses clients, sur leur espace personnel. Les clients accèdent aux photos et choisissent les clichés qu'il souhaitent obtenir. Ils peuvent ensuite les télécharger. Projet de fin de formation, réalisé en duo.",
+        image: 'photography.png',
+        link_github: "https://github.com/TeamDevelopersChrisRosa/photography-front",
+        link_project: "https://photographyyyy.netlify.app/",
+    },
+    {
         id: 8,
         title: 'Développeuse Front-End & Back-End',
         date: 'novembre 2021 - mars 2022',
