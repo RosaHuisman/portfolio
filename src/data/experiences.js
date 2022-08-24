@@ -1,5 +1,14 @@
 const experiences = [
     {
+        id: 8,
+        title: 'Développeuse Front-End & Back-End',
+        date: 'novembre 2021 - mars 2022',
+        place: 'autodidacte',
+        subtitle: "Pétanque",
+        description: "Application web permettant de gérer les parties et scores pour un concours de pétanque, du tirage au sort des joueurs jusqu’au classement final.",
+        image: 'petanque.png'
+    },
+    {
         id: 1,
         title: 'Product Owner & développeuse Front-End',
         date: 'août - septembre 2021',
