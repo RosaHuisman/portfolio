@@ -65,7 +65,7 @@ const handleClickCV = () => {
 
 
               <p className={ isOpen ? "intro__firstsection__text__open" : "intro__firstsection__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment terminé une formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
+            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment obtenu mon titre professionnel concepteur développeur d'applications. Après avoir terminé une première formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Puis une seconde formation en alternance chez SIMPLON.co. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
 
             <div className={ isOpen ? "intro__firstsection__icons__open" : "intro__firstsection__icons" }>
               <p><SiJavascript/></p>
