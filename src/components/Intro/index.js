@@ -65,7 +65,7 @@ const handleClickCV = () => {
 
 
               <p className={ isOpen ? "intro__firstsection__text__open" : "intro__firstsection__text" }>
-            <b>Passionnée</b> d’informatique et <b>perfectionniste</b> jusqu’au bout des ongles, j’ai récemment obtenu mon titre professionnel concepteur développeur d'applications. Après avoir terminé une première formation intensive et passionnante dans le développement web, à l’école O’Clock. Formation de 800 heures pour devenir développeuse <b>JS Fullstack</b>, avec une spécialisation en <b>React/Redux</b>. Puis une seconde formation en alternance chez SIMPLON.co. Dans ce portfolio vous trouverez les projets que j'ai réalisé, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
+            Hello world ! Passionnée d’informatique et perfectionniste jusqu’au bout des ongles, j’ai récemment obtenu mon titre professionnel concepteur développeur d'applications. Après avoir terminé en septembre 2021 une première formation intensive et passionnante, à l’école O’Clock. Suivie d'une seconde formation, de novembre 2021 à novembre 2022, en alternance à l'école SIMPLON.co. Dans ce portfolio vous trouverez les projets que j'ai réalisés, mais également ceux qui sont en cours. Si vous souhaitez en savoir plus sur mes motivations, n'hésitez pas à me contacter.  
 
             <div className={ isOpen ? "intro__firstsection__icons__open" : "intro__firstsection__icons" }>
               <p><SiJavascript/></p>
