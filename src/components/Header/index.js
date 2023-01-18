@@ -6,12 +6,14 @@ import TextTransition, { presets } from "react-text-transition";
 
 
 const TEXTS = [
-  " développeuse Junior",
-  " très motivée",
-  " développeuse React",
-  " rigoureuse",
-  " développeuse Front-End",
-  " autonome"
+  "  développeuse Junior",
+  "  très motivée",
+  "  développeuse React",
+  "  rigoureuse",
+  "  développeuse Front-End",
+  "  autonome",
+  "  développeuse Back-End",
+  "  passionnée",
 ];
 
 
