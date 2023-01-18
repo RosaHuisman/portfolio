@@ -8,7 +8,7 @@ import TextTransition, { presets } from "react-text-transition";
 const TEXTS = [
   " développeuse Junior",
   " très motivée",
-  " développeuse Full-Stack",
+  " développeuse FullStack",
   " rigoureuse",
   " développeuse Front-End",
   " autonome"
