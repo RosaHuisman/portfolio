@@ -343,7 +343,6 @@ div span {opacity:0;}
 
                 &__element {
                     &:hover {
-                        text-decoration: underline;
                         color: #bdb026;
                         
                         &:after {
@@ -373,16 +372,6 @@ div span {opacity:0;}
                         &:hover:after {
                             content: 'Ecrivez moi !';
                         }
-                    }
-                    
-                    &__age:hover:after {
-                        content: 'Et pas une seule ride !';
-                    }
-                    &__job:hover:after {
-                        content: 'Vous ne serez pas déçu.e!';
-                    }
-                    &__myhome:hover:after {
-                        content: 'Là où il fait toujours beau !';
                     }
                 }
 
