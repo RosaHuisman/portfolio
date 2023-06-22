@@ -19,7 +19,7 @@ const maxlimit = 230;
 
     return (
       <div className="exp">
-        {experience.image && <Link to={{ pathname: experience.link_project }} target="_blank"> <img src={require(`../../../images/${experience.image}`).default} alt={experience.image} className="exp__image"/> </Link> }
+        {experience.image && <Link to={{ pathname: experience.link_project }} target="_blank" rel="noreferrer"> <img src={require(`../../../images/${experience.image}`).default} alt={experience.image} className="exp__image"/> </Link> }
         
         <h2 className="exp__title">{experience.title}</h2>
         <p className="exp__date">{experience.date}</p>
@@ -47,15 +47,15 @@ const maxlimit = 230;
           
         
         {experience.link_youtube ? (
-          <Link to={{ pathname: experience.link_youtube }} className="exp__link" target="_blank"> Présentation Youtube </Link>
+          <Link to={{ pathname: experience.link_youtube }} className="exp__link" target="_blank" rel="noreferrer"> Présentation Youtube </Link>
         ) : null
         }
         {experience.link_github ? (
-        <Link to={{ pathname: experience.link_github }} className="exp__link" target="_blank"> Repo Github </Link>
+        <Link to={{ pathname: experience.link_github }} className="exp__link" target="_blank" rel="noreferrer"> Repo Github </Link>
         ) : null
         }
         {experience.link_project ? (
-        <Link to={{ pathname: experience.link_project }} className="exp__link" target="_blank"> Site en ligne </Link>
+        <Link to={{ pathname: experience.link_project }} className="exp__link" target="_blank" rel="noreferrer"> Site en ligne </Link>
         ) : null
         }
 
