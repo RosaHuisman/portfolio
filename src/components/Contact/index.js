@@ -6,6 +6,8 @@ import { send } from 'emailjs-com';
 import Swal from 'sweetalert2'
 
 import drawlyingwomen from '../../images/fille_allongee_ordinateur.png'
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 const Contact = ({ 
@@ -41,10 +43,10 @@ const Contact = ({
     } else {
       isLoading()
       send(
-        'service_0qbltmc',
-        'template_jzlv1z9',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         data,
-        'user_SZw2HFNWL7cZpmnP0HPiR'
+        process.env.REACT_APP_USER_ID
       )
         .then((response) => {
           console.log('SUCCESS!', response.text);
@@ -88,7 +90,7 @@ const Contact = ({
                   className='contact__textarea'
                   onChange={handleChange}
                />
-              {loading ? <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>: null}  
+              {loading ? <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>: null}  
               <button type='submit' className="contact__submit"> Envoyer </button>
            </form>
            
