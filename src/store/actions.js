@@ -5,7 +5,6 @@ export const CHANGE_VALUE = 'CHANGE_VALUE'
 export const INPUT_EMPTY = 'INPUT_EMPTY'
 export const MESSAGE_SEND = 'MESSAGE_SEND'
 export const CHANGE_TEXTAREA_VALUE = 'CHANGE_TEXTAREA_VALUE'
-export const SET_LOADING = 'SET_LOADING'
 
 export const clickOnImage = () => ({
     type: CLICK_IMAGE
@@ -37,8 +36,4 @@ export const messageSend = () => ({
 export const changeTextareaValue = (value)=> ({
     type: CHANGE_TEXTAREA_VALUE,
     value
-})
-
-export const setIsLoading = () => ({
-    type: SET_LOADING,
 })

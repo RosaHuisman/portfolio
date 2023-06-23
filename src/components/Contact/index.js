@@ -15,12 +15,8 @@ const Contact = ({
   message, 
   reply_to,
   inputEmpty,
-  emptymessage,
   contactSuccess,
-  successmessage,
   changeTextareaValue,
-  isLoading,
-  loading,
 }) => {
 
   const data = {
@@ -41,7 +37,6 @@ const Contact = ({
       inputEmpty();
 
     } else {
-      isLoading()
       send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
@@ -50,7 +45,11 @@ const Contact = ({
       )
         .then((response) => {
           console.log('SUCCESS!', response.text);
-          contactSuccess()
+          Swal.fire({
+            title: 'Merci!',
+            text: 'Votre message a bien été envoyé!',
+          })
+          contactSuccess();
         })
         .catch((err) => {
           console.log('FAILED...', err);
@@ -90,12 +89,9 @@ const Contact = ({
                   className='contact__textarea'
                   onChange={handleChange}
                />
-              {loading ? <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>: null}  
               <button type='submit' className="contact__submit"> Envoyer </button>
            </form>
            
-           {emptymessage ? <p className="contact__message">{emptymessage}</p> : null}
-           {successmessage ? <p className="contact__message">{successmessage}</p> : null}
           </div>
           
          <div>.</div>

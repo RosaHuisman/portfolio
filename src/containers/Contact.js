@@ -1,16 +1,12 @@
 import { connect } from 'react-redux';
 import Contact from '../components/Contact';
 
-import { inputIsEmpty, messageSend, changeTextareaValue, setIsLoading } from '../store/actions'
+import { inputIsEmpty, messageSend, changeTextareaValue } from '../store/actions'
 
 const mapStateToProps = (state) => ({
     username: state.username,
     message: state.message,
     reply_to: state.reply_to,
-    emptymessage: state.emptymessage,
-    successmessage: state.successmessage,
-    loading: state.loading,
-    
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -26,9 +22,6 @@ const mapDispatchToProps = (dispatch) => ({
         dispatch(changeTextareaValue(value))
     },
 
-    isLoading: () => {
-        dispatch(setIsLoading())
-    }
     
 });
 
