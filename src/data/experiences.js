@@ -5,9 +5,19 @@ const experiences = [
         date: 'Novembre 2021 - aujourd\'hui',
         place: 'Caplogik',
         subtitle: "Projets d'entreprise",
-        description: "Salariée dans une petite entreprise, je développe et maintiens des outils destinés aux collèges, lycées & CFA. Cette entreprise m'a donné ma chance en tant que développeuse junior. J'ai commencé par un contrat en alternance d'un an, à la suite duquel j'ai été embauchée en CDI. Les outils sont développés avec Symfony, Twig et bases de données MySQL.",
+        description: "Je fais partie d'une équipe de 4 développeurs. Nous développons des outils et solutions afin de répondre à des besoins spécifiques dans le domaine de l'éducation. J'ai commencé par un contrat en alternance d'un an, à la suite duquel j'ai été embauchée en CDI. Les outils sont développés avec Symfony, Twig et bases de données MySQL.",
         image: '',
         link_project: "http://www.caplogik.com/fr",
+    },
+    {
+        id: 11,
+        title: 'Développeuse Front-End & Back-End',
+        date: 'février - décembre 2023',
+        place: 'autodidacte',
+        subtitle: "Photography - part 2",
+        description: "Application web permettant à une photographe professionnelle de partager les photos d’un shooting avec ses clients. Les clients se connectent à leur espace personnel et peuvent choisir leurs photos préférées et passer commande. Projet entammé en duo, afin de le présenter lors de mon passage de titre professionnel Conceptrice Développeuse d'Applications. Puis continué et finalisé par mes soins à la suite de la formation.",
+        image: 'photography2.png',
+        link_project: "https://laurahuismanphotographe.com/",
     },
     {
         id: 10,
@@ -25,7 +35,7 @@ const experiences = [
         date: 'janvier - novembre 2022',
         place: 'Simplon',
         subtitle: "Photography",
-        description: "Application web permettant à une photographe professionnelle de partager les photos d’un shooting avec ses clients, sur leur espace personnel. Les clients accèdent aux photos et choisissent les clichés qu'il souhaitent obtenir. Ils peuvent ensuite les télécharger. Projet de fin de formation, réalisé en duo.",
+        description: "Application web permettant à une photographe professionnelle de partager les photos d’un shooting avec ses clients, sur leur espace personnel. Projet de fin de formation, réalisé en duo.",
         image: 'photography.png',
         link_github: "https://github.com/TeamDevelopersChrisRosa/photography-front",
         link_project: "https://photographyyyy.netlify.app/",
@@ -66,14 +76,11 @@ const experiences = [
     {
         id:2,
         title: "Développement site internet d'une mairie",
-        date: '2016 à  aujourd\'hui',
-        place: "Mairie de Cardet (30350)",
+        date: '2016 à 2022',
+        place: "autodidacte",
         subtitle: "site Wordpress",
-        description: "Création & mise à jour du site internet d'une mairie, avec Wordpress, en autodidacte.",
-        link_project: "https://mairiedecardet.fr/",
+        description: "Création & mise à jour régulière du site internet d'une mairie d'une petite commune. Utilisation de Wordpress. Aujourd'hui, ce site n'est plus en ligne car je l'ai refait avec React en 2023.",
         image: 'mairie_de_cardet.png'
-
-    
     },
     {
         id:6,
@@ -107,10 +114,10 @@ const experiences = [
     {
         id:3,
         title: 'Employée polyvalente restaurant & camping',
-        date: '2020 - 2007',
+        date: '2007 - 2020',
         place: 'Camping Beau Rivage à Cardet (30350)',
         subtitle: "Chef de cuisine, cuisinière, pizzaïola, barmaid",
-        description: "J'ai pendant de nombreuses années travaillé dans un camping. J'étais en charge du restaurant, la gestion des stocks et du personnel. J'ai beaucoup appris pendant ces années, le contact client, le service. C'était très enrichissant. Mais le saisonnier est difficile et surtout après l'arrivée de mes 2 enfants, j'ai choisi de me former pour enfin exercer un métier qui me passionne. ",    
+        description: "J'ai pendant de nombreuses années travaillé dans un camping. En grande majorité dans le restaurant du camping, mais également à de nombreux autres postes. J'ai beaucoup appris pendant ces années, le contact client, le sens du service, le travail d'équipe, les journées à rallonge et les nuits courtes. C'était très enrichissantet m'a permis d'acquérir de véritables valeurs du travail, de détermination et de motivation. Après l'arrivée de mes 2 enfants, j'ai choisi de me former pour exercer un autre métier qui me passionne. ",    
         image: 'camping_beau_rivage.png'
     }
 ]
