@@ -1,18 +1,49 @@
+@use '../../styles/vars' as v;
+
+
 .experience {
-    //background-color: #0c8a60;
-    padding: 1rem;
-    line-height: 1.3rem;
+    padding: 1rem 0;
 
-    @media (min-width: 1024px) {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 80%;
-        margin: 0 auto;
-        box-sizing: border-box;
+    &__list {
+        padding: 1rem;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1em;
+            margin-bottom: 2rem;
 
+            &__button {
+                background-color: transparent;
+                padding: 0.3rem 0.5rem;
+                border: 2px solid #EBA602;
+                border-radius: 5px;
+                font-size: .8rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s;
 
+                &:hover {
+                    background-color: #EBA602;
+                    color: #fff;
+                }
+            }
+        }
     }
 
-}
+    // mobile first
 
+    // tablet
+    @media screen and (min-width: v.$minTabletBreakpoint) and (max-width: v.$maxTabletBreakpoint) {
+        
+    }
+
+    // desktop
+    @media screen and (min-width: v.$minDesktopBreakpoint) and (max-width: v.$maxDesktopBreakpoint) {
+        
+    }
+
+    // large desktop
+    @media screen and (min-width: v.$minLargeDesktopBreakpoint) {
+        
+    }
+}
