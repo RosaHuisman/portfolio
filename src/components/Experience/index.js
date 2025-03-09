@@ -15,14 +15,13 @@ const Experience = () => {
       <div className="experience mt-4 bg-light">
         <SectionTitle title={'Ce que je sais faire'} />
         <ul className='experience__list'>
-          <li className='experience__list__item'> <span><i class="bi bi-check2-square"></i> Créer un espace d’authentification </span><button onClick={handleNotSoFast} className='experience__list__item__button'> Tester </button> </li>
-          <li className='experience__list__item'> <span><i class="bi bi-check2-square"></i> Créer un site vitrine </span><button className='experience__list__item__button' onClick={() => window.open('https://mairie-de-cardet.com/', '_blank')}> Voir un exemple </button></li>
-          <li className='experience__list__item'> <span><i class="bi bi-check2-square"></i> Créer une application métier aboutie </span><button className='experience__list__item__button' onClick={handleNotSoFast}> Testez-la sur son espace de test </button> </li>
-          <li className='experience__list__item'> <span><i class="bi bi-check2-square"></i> Collaborer avec une équipe </span><button className='experience__list__item__button' onClick={() => setActiveModal("teamwork")}> En savoir plus </button> </li>
-          <li className='experience__list__item'> <span><i class="bi bi-check2-square"></i> Le télétravail </span><button className='experience__list__item__button' onClick={() => setActiveModal("remoteWork")}> La preuve en images </button> </li>
+          <li className='experience__list__item'> <span><i className="bi bi-check2-square"></i> Créer un espace d’authentification </span><button onClick={handleNotSoFast} className='experience__list__item__button'> Tester </button> </li>
+          <li className='experience__list__item'> <span><i className="bi bi-check2-square"></i> Créer un site vitrine </span><button className='experience__list__item__button' onClick={() => window.open('https://mairie-de-cardet.com/', '_blank')}> Voir un exemple </button></li>
+          <li className='experience__list__item'> <span><i className="bi bi-check2-square"></i> Créer une application métier aboutie </span><button className='experience__list__item__button' onClick={handleNotSoFast}> Testez-la sur son espace de test </button> </li>
+          <li className='experience__list__item'> <span><i className="bi bi-check2-square"></i> Collaborer avec une équipe </span><button className='experience__list__item__button' onClick={() => setActiveModal("teamwork")}> En savoir plus </button> </li>
+          <li className='experience__list__item'> <span><i className="bi bi-check2-square"></i> Le télétravail </span><button className='experience__list__item__button' onClick={() => setActiveModal("remoteWork")}> La preuve en images </button> </li>
         </ul>
 
-        {/* Modal pour "Collaborer avec une équipe" */}
         {activeModal === "teamwork" && (
           <Modal
             setIsOpen={() => setActiveModal(null)}
@@ -31,7 +30,6 @@ const Experience = () => {
           />
         )}
 
-        {/* Modal pour "Travailler en distanciel comme en présentiel" */}
         {activeModal === "remoteWork" && (
           <Modal
             setIsOpen={() => setActiveModal(null)}

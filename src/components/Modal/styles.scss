@@ -34,6 +34,8 @@
   }
   
   .modal-content button:hover {
-    background: darken(v.$primaryColor, 10%);
+    background: white;
+    color: v.$primaryColor;
+    border: 2px solid v.$primaryColor;
   }
   

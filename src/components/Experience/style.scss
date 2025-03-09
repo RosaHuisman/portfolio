@@ -6,6 +6,11 @@
 
     &__list {
         padding: 1rem;
+
+        @media screen and (min-width: v.$minTabletBreakpoint) {
+            max-width: 900px;
+            margin: 0 auto;
+        }
         &__item {
             display: flex;
             justify-content: space-between;
@@ -28,22 +33,5 @@
                 }
             }
         }
-    }
-
-    // mobile first
-
-    // tablet
-    @media screen and (min-width: v.$minTabletBreakpoint) and (max-width: v.$maxTabletBreakpoint) {
-        
-    }
-
-    // desktop
-    @media screen and (min-width: v.$minDesktopBreakpoint) and (max-width: v.$maxDesktopBreakpoint) {
-        
-    }
-
-    // large desktop
-    @media screen and (min-width: v.$minLargeDesktopBreakpoint) {
-        
     }
 }
