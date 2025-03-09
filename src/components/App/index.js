@@ -3,6 +3,8 @@ import './style.scss';
 import Intro from '../Intro';
 import Experience from '../Experience';
 import Stack from '../Stack';
+import Links from '../Links';
+import Formation from '../Formation';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Intro />
       <Experience />
       <Stack />
+      <Links />
+      <Formation />
     </div>
   );
 }

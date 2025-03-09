@@ -11,14 +11,14 @@ const Intro = () => {
       <div className='text-center'>
         <div className='fs-5'>Bienvenue sur le portfolio de :</div>
         <h1 className='fw-bold display-3'>Rosa Huisman</h1>
-        <h2 className='text-primary fs-6'>CONCEPTRICE DÉVELOPPEUSE D’APPLICATIONS</h2>
+        <h2 className='intro__subtitle fs-6'>CONCEPTRICE DÉVELOPPEUSE D’APPLICATIONS</h2>
       </div>
         
       <p className='my-3 mx-2'> Développeuse web diplômée, forte d'une première expérience professionnelle et passionnée par les technologies de pointe. Motivée par l'innovation, je suis à la recherche d'un environnement dynamique où je pourrai mettre à profit mon esprit d'équipe et mon envie de contribuer à des projets numériques ambitieux. </p>
 
-      <div className='bg-secondary text-center pt-3 px-5 mt-5 d-flex justify-content-between'>
+      <div className='intro__about text-center pt-3 px-5 mt-5 d-flex justify-content-between'>
         <div className='d-md-flex justify-content-between flex-wrap text-center'>
-          <div className='intro__contactSection'>
+          <div className='intro__about__contact'>
             <p><i className="me-2 bi bi-geo-alt"></i>30350, Cassagnoles</p>
             <p><i className="me-2 bi bi-phone"></i>06.73.36.90.50 </p>
             <p> 
@@ -26,7 +26,7 @@ const Intro = () => {
               rosa.huisman@gmail.com</a>
             </p>
           </div>
-          <div className='intro__aboutSection'>
+          <div className='intro__about__infos'>
             <p><i className="me-2 bi bi-cake"></i>{ new Date().getFullYear() - 1988 } ans </p>
             <p><i className="me-2 bi bi-car-front"></i>Permis B - Véhiculée </p>
             <p><i className="me-2 bi bi-person-arms-up"></i>En couple - 2 enfants</p>

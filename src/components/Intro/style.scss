@@ -2,6 +2,20 @@
 
  .intro {
 
+    &__subtitle {
+        color: v.$primaryColor;
+    }
+
+    &__about {
+        background-color: v.$primaryLight;
+
+        &__contact, &__infos {
+            @media screen and (min-width: v.$minTabletBreakpoint) {
+                width: 50%;
+            }
+        }
+    }
+
     &__image {
         display: none;
 
@@ -12,10 +26,5 @@
         }
     }
 
-    &__contactSection, &__aboutSection {
-        // tablet and larger
-        @media screen and (min-width: v.$minTabletBreakpoint) {
-            width: 50%;
-        }
-    }
+    
 }
