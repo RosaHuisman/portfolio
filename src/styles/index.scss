@@ -1,9 +1,5 @@
 @use 'reset';
 @use 'vars';
-@import "bootstrap/scss/bootstrap";
-
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,16 +20,3 @@ h2, h3, h4, h5, h6 {
 p, div, a, span, li, input, button {
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
-// mobile first
-
-// tablet
-//@media screen and (min-width: v.$minTabletBreakpoint) and (max-width: v.$maxTabletBreakpoint) {}
-
-// desktop
-//@media screen and (min-width: v.$minDesktopBreakpoint) and (max-width: v.$maxDesktopBreakpoint) {}
-
-// large desktop
-//@media screen and (min-width: v.$minLargeDesktopBreakpoint) {}

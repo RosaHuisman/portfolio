@@ -7,7 +7,7 @@ const Links = () => {
     return (
       <div className="links mt-4 bg-light">
         <SectionTitle title={'Liens utiles'} />
-        <div className='d-flex flex-wrap justify-content-around'>
+        <div className='d-md-flex flex-wrap justify-content-around text-center'>
           <div>
             <div><a href="https://github.com/RosaHuisman" target='_blank' rel="noreferrer" className="links__link"> Mon profil github </a></div>
             <div><a href="CV.pdf" target="_blank" rel="noopener noreferrer" className="links__link"> Mon CV (à imprimer)</a></div>
