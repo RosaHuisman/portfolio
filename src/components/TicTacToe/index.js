@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './style.scss';
 
 const TicTacToe = () => {
@@ -20,7 +20,7 @@ const TicTacToe = () => {
     return null;
   };
 
-  const findBestMove = (squares) => {
+  const findBestMove = useCallback((squares) => {
     // Check for immediate win
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
@@ -29,7 +29,7 @@ const TicTacToe = () => {
         if (checkWinner(copy) === 'O') return i;
       }
     }
-
+  
     // Block the player's win
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
@@ -38,19 +38,37 @@ const TicTacToe = () => {
         if (checkWinner(copy) === 'X') return i;
       }
     }
-
+  
     // Take center if available
     if (squares[4] === null) return 4;
-
+  
     // Take a corner if available
     const corners = [0, 2, 6, 8];
     for (let corner of corners) {
       if (squares[corner] === null) return corner;
     }
-
+  
     // Take any remaining square
     return squares.findIndex(cell => cell === null);
-  };
+  }, []);
+  
+  const computerMove = useCallback(() => {
+    if (!checkWinner(board)) {
+      const bestMove = findBestMove(board);
+      const newBoard = board.slice();
+      newBoard[bestMove] = 'O';
+      setBoard(newBoard);
+      setIsXNext(true);
+    }
+  }, [board, findBestMove]);
+  
+  useEffect(() => {
+    if (!isXNext && !checkWinner(board)) {
+      const timer = setTimeout(computerMove, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [isXNext, board, computerMove]);
+  
 
   const handleClick = (index) => {
     if (board[index] || checkWinner(board) || !isXNext) return;
@@ -60,23 +78,6 @@ const TicTacToe = () => {
     setBoard(newBoard);
     setIsXNext(false);
   };
-
-  const computerMove = () => {
-    if (!checkWinner(board)) {
-      const bestMove = findBestMove(board);
-      const newBoard = board.slice();
-      newBoard[bestMove] = 'O';
-      setBoard(newBoard);
-      setIsXNext(true);
-    }
-  };
-
-  useEffect(() => {
-    if (!isXNext && !checkWinner(board)) {
-      const timer = setTimeout(computerMove, 500);
-      return () => clearTimeout(timer);
-    }
-  }, [isXNext, board]);
 
   const handleReset = () => {
     setBoard(Array(9).fill(null));

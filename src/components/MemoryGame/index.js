@@ -29,9 +29,6 @@ const cardsData = {
 const MemoryGame = () => {
   const [memoryCards, setMemoryCards] = useState([]);
   const [returnedCards, setReturnedCards] = useState([]);
-  const [count, setCount] = useState(0);
-  const [gameRunning, setGameRunning] = useState(false);
-  const [finish, setFinish] = useState(false);
 
   const generateCards = () => {
     return cardsData.cards;
@@ -42,10 +39,7 @@ const MemoryGame = () => {
   };
 
   const newGame = () => {
-    setGameRunning(true);
-    setFinish(false);
     setMemoryCards(shuffleCards(generateCards()));
-    setCount(0);
     setReturnedCards([]);
   };
 
