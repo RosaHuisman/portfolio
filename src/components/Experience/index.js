@@ -3,6 +3,8 @@ import './style.scss';
 import SectionTitle from '../SectionTitle';
 import Modal from '../Modal';
 
+import home_office from '../../assets/images/home-office.jpg';
+
 
 const Experience = () => {
 
@@ -34,7 +36,8 @@ const Experience = () => {
           <Modal
             setIsOpen={() => setActiveModal(null)}
             title={"Full remote friendly"}
-            content={"Depuis 2021, je travaille de manière hybride (1 jour en présentiel, le reste en distanciel). J'ai appris à bien m'organiser et à utiliser les outils collaboratifs pour rester efficace quel que soit l'environnement. J'ai un espace de travail dédié chez moi, et je suis équipée pour travailler en toute autonomie. C'est un mode de travail que j'apprécie particulièrement, afin pouvoir concilier vie privée et vie pro de la manière la plus sereine."}
+            content={"Depuis 2021, je travaille en mode hybride, avec une journée en présentiel et le reste en télétravail. Cette expérience m'a permis de développer une organisation rigoureuse et de maîtriser les outils collaboratifs afin de rester efficace dans tous les environnements. Disposant d'un espace de travail dédié et d'un équipement adapté, je peux travailler en toute autonomie. Ce mode de fonctionnement me convient particulièrement, car il me permet de concilier harmonieusement vie professionnelle et personnelle."}
+            image={home_office}
           />
         )}
 

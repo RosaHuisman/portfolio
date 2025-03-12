@@ -5,7 +5,7 @@ import SectionTitle from '../SectionTitle';
 
 const Links = () => {
     return (
-      <div className="links mt-4 bg-light">
+      <div className="links mt-4 bg-light p-3">
         <SectionTitle title={'Liens utiles'} />
         <div className='d-md-flex flex-wrap justify-content-around text-center'>
           <div>

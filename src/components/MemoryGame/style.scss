@@ -1,0 +1,29 @@
+.cardsboard {
+    max-width: 800px;
+    margin: 0 auto;
+    &__cards {
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+.card {
+    width: calc(25% - 20px);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &__image {
+        width: 100px;
+        margin: 0 auto;
+        &__matched {
+            opacity: 0.5;
+        }
+    }
+}

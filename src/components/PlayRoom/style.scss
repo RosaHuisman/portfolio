@@ -1,0 +1,44 @@
+@use '../../styles/vars' as v;
+
+
+.playroom {
+    padding: 1rem 0;
+    &__games {
+        margin: 2rem auto 1rem;
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+
+        &__btn {
+            background-color: v.$primaryColor;
+            color: white;
+            padding: .5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: v.$primaryDark;
+            }
+        }
+    }
+}
+
+
+// mobile first
+
+// tablet
+@media screen and (min-width: v.$minTabletBreakpoint) and (max-width: v.$maxTabletBreakpoint) {
+    
+}
+
+// desktop
+@media screen and (min-width: v.$minDesktopBreakpoint) and (max-width: v.$maxDesktopBreakpoint) {
+    
+}
+
+// large desktop
+@media screen and (min-width: v.$minLargeDesktopBreakpoint) {
+    
+}

@@ -1,23 +1,11 @@
 @use '../../styles/vars' as v;
 
-
 .formation {
-}
 
-
-// mobile first
-
-// tablet
-@media screen and (min-width: v.$minTabletBreakpoint) and (max-width: v.$maxTabletBreakpoint) {
-    
-}
-
-// desktop
-@media screen and (min-width: v.$minDesktopBreakpoint) and (max-width: v.$maxDesktopBreakpoint) {
-    
-}
-
-// large desktop
-@media screen and (min-width: v.$minLargeDesktopBreakpoint) {
-    
+    &__title {
+        font-weight: 700;
+        color: v.$primaryColor;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
 }
